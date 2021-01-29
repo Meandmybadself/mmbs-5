@@ -1,0 +1,55 @@
+@import 'nav';
+
+:root {
+  --red: #cc0000;
+  --background: #f4f2f9;
+  --content: #2a2826;
+  --gutter: 18px;
+  --placard-bg: #fff;
+  --grid-width: 1000px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #111122;
+    --content: #f4f2f9;
+    --red: #ff0000;
+    --placard-bg: #f4f2f9;
+  }
+}
+ 
+html {
+  padding: 0;
+  margin: 0;
+  background-color: var(--background);
+}
+
+* {
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.red {
+  color: var(--red);
+}
+
+.content {
+  color: var(--content);
+}
+
+#perspective-root {
+  transform-style: preserve-3d;
+  perspective: 40px;
+  transform-origin: 50% 50%;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#root {
+  max-width: var(--grid-width);
+  margin: 10px auto;
+  min-height: 100vh;
+  transform-style: preserve-3d;
+}
+

@@ -1,0 +1,21 @@
+@import 'variables';
+
+@mixin container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 0.9 * $breakpoint--xl;
+}
+
+
+@mixin med {
+  @media (min-width: 500px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: 1000px) {
+    @content;
+  }
+}

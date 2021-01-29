@@ -1,0 +1,42 @@
+
+nav {
+  margin-bottom: 100px;
+  
+  div.title {
+    font-family: "Chronicle Display A", "Chronicle Display B";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5em;
+    color: var(--content);
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  div.subtitle {
+    text-align: center;
+    font-family: "Ringside Condensed A", "Ringside Condensed B";
+    text-transform: uppercase;
+    font-size: 0.925em;
+    margin-top: 15px;
+    font-weight: 100;
+  }
+
+  ul.toc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    list-style: none;
+  }
+
+  ul.toc a {
+    font-family: "Ringside Condensed A", "Ringside Condensed B";
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    color: #cc0000;
+    text-transform: uppercase;
+    font-size: 1.3em;
+  }
+}

@@ -1,0 +1,18 @@
+<!--
+  Templates can look very similar to components (like header.html) with the HTML at the top and the
+  corresponding 'stylesheet' and 'javascript' paired shortcodes below.
+-->
+
+<main class="home">
+  
+</main>
+
+{% stylesheet 'scss' %}
+  // Import sass from your styles directory
+  @import 'global';
+  
+{% endstylesheet %}
+
+{% javascript %}
+  console.log('Super fast 💨')
+{% endjavascript %}

@@ -1,0 +1,138 @@
+[
+    {
+        "id": "text-a-target",
+        "type": "work",
+        "sublabel": "Target",
+        "label": "Text a Target"
+    },
+    {
+        "id": "studio-connect",
+        "type": "work",
+        "sublabel": "Target",
+        "label": "Studio Connect"
+    },
+    {
+        "id": "bra-telemetry",
+        "type": "work",
+        "sublabel": "Target",
+        "label": "Bra Telemetry"
+    },
+    {
+        "id": "doll-creator",
+        "type": "work",
+        "sublabel": "Manhattan Toy Co.",
+        "label": "Doll Creator"
+    },
+    {
+        "id": "new-wheel",
+        "type": "work",
+        "label": "Flagship Website",
+        "sublabel": "The New Wheel"
+    },
+    {
+        "id": "doritos",
+        "type": "work",
+        "sublabel": "Doritos",
+        "label": "Blink-182 / Big Boi AR Experience"
+    },
+    {
+        "id": "disrupt",
+        "type": "work",
+        "sublabel": "TechCrunch",
+        "label": "Disrupt"
+    },
+    {
+        "id": "air-jordan-30",
+        "type": "work",
+        "sublabel": "Nike",
+        "label": "Air Jordan 30th"
+    },
+    {
+        "id": "live-in-levis",
+        "type": "work",
+        "sublabel": "Levi's",
+        "label": "Eureka Innovation Lab"
+    },
+    {
+        "id": "pins",
+        "type": "projects",
+        "sublabel": "",
+        "label": "Pins"
+    },
+    {
+        "id": "paint-by-numbers",
+        "type": "projects",
+        "sublabel": "",
+        "label": "Paint-by-Numbers"
+    },
+    {
+        "id": "social-cereal",
+        "type": "projects",
+        "sublabel": "",
+        "label": "Social Cereal"
+    },
+    {
+        "id": "betamaxmas",
+        "type": "projects",
+        "sublabel": "",
+        "label": "BetamaXmas"
+    },
+    {
+        "id": "minnecrapolis",
+        "type": "projects",
+        "sublabel": "",
+        "label": "Minnecrapolis"
+    },
+    {
+        "id": "faces",
+        "type": "projects",
+        "sublabel": "",
+        "label": "Faces"
+    },
+    {
+        "id": "episogood",
+        "type": "projects",
+        "sublabel": "",
+        "label": "Episogood"
+    },
+    {
+        "id": "countdown",
+        "type": "projects",
+        "sublabel": "",
+        "label": "Inauguration Countdown"
+    },
+    {
+        "id": "ignite",
+        "type": "media",
+        "sublabel": "Ignite",
+        "label": "The Tale of Two Domain-crossed Lovers",
+        "url": "https://www.youtube.com/watch?v=Kd-TFFyzqfI"
+    },
+    {
+        "id": "evb",
+        "type": "media",
+        "sublabel": "EVB",
+        "label": "Halloween", 
+        "url": "https://www.youtube.com/watch?v=eIlACvVXFj0"
+    },
+    {
+        "id": "sxsw-2008",
+        "type": "media",
+        "sublabel": "SxSW",
+        "label": "Worst Website Ideas 2008", 
+        "url": "https://www.youtube.com/watch?v=xUWJnn1-FSk"
+    },
+    {
+        "id": "sxsw-2006",
+        "type": "media",
+        "sublabel": "SxSW",
+        "label": "Worst Website Ideas 2006", 
+        "url": "https://vimeo.com/819738"
+    },
+    {
+        "id": "killing-me-softly",
+        "type": "audio",
+        "label": "Killing Me Softly no times mix)",
+        "sublabel": ""
+    }
+]

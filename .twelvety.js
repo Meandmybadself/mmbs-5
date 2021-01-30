@@ -26,7 +26,7 @@ module.exports = {
   imageFormats: {
     same: 75,
     webp: 60,
-    // Remove AVIF if builds are taking too long
-    avif: 30
+    // // Remove AVIF if builds are taking too long
+    // avif: 30
   }
 }

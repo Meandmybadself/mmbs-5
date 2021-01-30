@@ -37,6 +37,8 @@ module.exports = function (config) {
   // Documentation: https://www.11ty.dev/docs/languages/markdown/#add-your-own-plugins
   config.setLibrary('md', markdown)
 
+  // config.addNunjucksFilter('thumbnailPath', require('./filters/paths'))
+
   return {
     dir: twelvety.dir
   }

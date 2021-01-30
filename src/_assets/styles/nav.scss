@@ -35,8 +35,13 @@ nav {
     font-style: normal;
     font-weight: 400;
     text-decoration: none;
-    color: #cc0000;
+    color: var(--red);
     text-transform: uppercase;
     font-size: 1.3em;
+    transition: border 0.3s ease-out;
+    border-bottom: 1px solid rgba(255,255,255,0);
+    &:hover, &.active {
+      border-bottom: 1px solid var(--red);
+    }
   }
 }

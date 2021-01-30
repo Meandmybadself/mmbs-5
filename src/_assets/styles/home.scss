@@ -1,0 +1,93 @@
+@import "mixins";
+
+.grid {
+    display: grid;
+    grid-gap: var(--gutter);
+    transform-style: preserve-3d;
+    grid-template-columns: 1fr;
+    grid-auto-flow: dense;
+
+    @include med {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include lg {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .box {
+        cursor: pointer;
+        grid-column-start: auto;
+        grid-row-start: auto;
+        @include sized();
+
+        // For items where we want to adjust the bg positioning on an id-basis.
+        &--evb {
+            .bg {
+                picture {
+                    object-position: top center;
+                }
+            }
+        }
+
+        &:nth-child(1) {
+            @include sized(2, 2);
+        }
+        &:nth-child(2) {
+            @include sized(2, 1);
+        }
+
+        &:nth-child(6) {
+            @include sized(1, 2);
+            // grid-area: 3 / 2 / 5 / 4;
+        }
+
+        &:nth-child(10) {
+            @include sized(2, 1);
+        }
+
+        &:nth-child(11) {
+            @include sized(2, 1);
+        }
+
+        &:nth-child(12) {
+            @include sized(2, 2);
+        }
+
+        &:nth-child(15) {
+            @include sized(2, 1);
+        }
+
+        &:nth-child(16) {
+            @include sized(2, 2);
+        }
+
+        &:nth-child(19) {
+            @include sized(2, 2);
+        }
+        &:nth-child(22) {
+            @include sized(2, 1);
+        }
+        @include section("disrupt", #00bf5c);
+        @include section("doritos", #fe3700);
+        @include section("new-wheel", #9e191b);
+        @include section("doll-creator", #d9ae87);
+        @include section("studio-connect", #e81131);
+        @include section("live-in-levis", #4259a1);
+        @include section("minnecrapolis", #8d5e28);
+        @include section("air-jordan-30", #303646);
+        @include section("text-a-target", #d42134);
+        @include section("bra-telemetry", #ef4d78);
+        @include section("faces", #1c1c1e);
+        @include section("betamaxmas", #4b1404);
+        @include section("episogood", #d42134);
+        @include section("pins", #d42134);
+        @include section("social-cereal", #d42134);
+        @include section("paint-by-numbers", #ebcd57);
+        @include section("sxsw-2008", #d42134);
+        @include section("sxsw-2006", #d42134);
+        @include section("evb", #6c265a);
+        @include section("ignite", #eb4200);
+        @include section("countdown", #008600);
+    }
+}

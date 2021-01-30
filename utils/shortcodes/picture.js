@@ -121,7 +121,7 @@ module.exports = function(src, alt, sizes = '90vw, (min-width: 1280px) 1152px', 
   const fallback = images[fallbackFormat][SIZES[SIZES.length - 1]]
 
   // Aspect ratio for padding-bottom
-  const ratio = Math.round(height * 100000 / width) / 1000
+  // const ratio = Math.round(height * 100000 / width) / 1000
 
   // Render srcsets for picture
   const srcsets = Object.entries(descriptors).map(([format, descriptor]) => {
@@ -129,8 +129,15 @@ module.exports = function(src, alt, sizes = '90vw, (min-width: 1280px) 1152px', 
   }).join('\n      ')
 
   // Responsive picture with srcset and native lazy loading
+  // const picture = `
+  //   <picture style="background-color:${color};padding-bottom:${ratio}%">
+  //     ${srcsets}
+  //     <img src="${fallback}" alt="${alt}" loading="${loading}">
+  //   </picture>
+  // `
+
   const picture = `
-    <picture style="background-color:${color};padding-bottom:${ratio}%">
+    <picture style="background-color:${color};">
       ${srcsets}
       <img src="${fallback}" alt="${alt}" loading="${loading}">
     </picture>

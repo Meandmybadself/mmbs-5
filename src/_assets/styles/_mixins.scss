@@ -19,3 +19,18 @@
     @content;
   }
 }
+
+@mixin section($id, $color) {
+  &--#{$id} {
+    div.shield {
+      background-color: $color;
+    }
+    h2 {
+      color: $color;
+    }
+  }
+}
+@mixin sized($width: 1, $height: 1) {
+  grid-column-end: span $width;
+  grid-row-end: span $height;
+}

@@ -1,7 +1,3 @@
----
-layout: default.html
----
-
 <main class="grid grid--{{page.fileSlug}}">
     <div class="box box--masthead">
         <div class="fg">
@@ -11,20 +7,20 @@ layout: default.html
             </div>
         </div>
         <div class="bg">
-            {% capture mastheadPath %}{{ page.fileSlug }}/masthead.jpg{% endcapture %}
+            {% set mastheadPath = page.fileSlug + "/masthead.jpg" %}
             {% picture mastheadPath, 'Masthead', '90vw', 'eager' %}
         </div>
     </div>
     <!-- Page content -->
 
     <div class='box box--text'>
-    <div class='fg'>
-        <div class="placard">
-            Description
+        <div class='fg'>
+            <div class="placard">
+                Description
+            </div>
+        </div>
+        <div class='bg'>
+            {% block description %}{% endblock %}
         </div>
     </div>
-    <div class='bg'>
-        {% block description %}{% endblock %}
-    </div>
-</div>
 </main>

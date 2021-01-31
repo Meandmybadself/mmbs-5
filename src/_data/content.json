@@ -3,7 +3,10 @@
         "id": "text-a-target",
         "type": "work",
         "sublabel": "Target",
-        "label": "Text a Target"
+        "label": "Text a Target",
+        "images": [
+            {"label": "Fart"}
+        ]
     },
     {
         "id": "studio-connect",

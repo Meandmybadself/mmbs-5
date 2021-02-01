@@ -5,104 +5,190 @@
         "sublabel": "Target",
         "label": "Text a Target",
         "images": [
-            {"label": "Fart"}
+            "In-store CTA",
+            "Sample convo"
         ]
     },
     {
         "id": "studio-connect",
         "type": "work",
         "sublabel": "Target",
-        "label": "Studio Connect"
+        "label": "Studio Connect",
+        "images": [
+            "Explore Screen",
+            "Post List"
+        ]
     },
     {
         "id": "bra-telemetry",
         "type": "work",
         "sublabel": "Target",
-        "label": "Bra Telemetry"
+        "label": "Bra Telemetry",
+        "images": [
+            "Prototype (closed)" ,
+            "Prototype (open)",
+            "Sample measurements"
+        ]
     },
     {
         "id": "doll-creator",
         "type": "work",
         "sublabel": "Manhattan Toy Co.",
-        "label": "Doll Creator"
+        "label": "Doll Creator",
+        "images": [
+            "Step 1",
+            "Step 2",
+            "Step 3"
+        ]
     },
     {
         "id": "new-wheel",
         "type": "work",
         "label": "Flagship Website",
-        "sublabel": "The New Wheel"
+        "sublabel": "The New Wheel",
+        "images": [
+            "Homepage",
+            "Bike Selection",
+            "Header"
+        ]
     },
     {
         "id": "doritos",
         "type": "work",
         "sublabel": "Doritos",
-        "label": "Blink-182 / Big Boi AR Experience"
+        "label": "Blink-182 / Big Boi AR Experience",
+        "images": [
+            "Blink 182",
+            "Packaging",
+            "Big Boi",
+            "Title Screen",
+            "Home Screen",
+            "Filming"
+        ]
     },
     {
         "id": "disrupt",
         "type": "work",
         "sublabel": "TechCrunch",
-        "label": "Disrupt"
+        "label": "Disrupt",
+        "images": [
+            "View from the podium",
+            "Deliberation",
+            "Team jacket",
+            "Made the homepage",
+            "Family business",
+            "Main stage"
+        ]
     },
     {
         "id": "air-jordan-30",
         "type": "work",
         "sublabel": "Nike",
-        "label": "Air Jordan 30th"
+        "label": "Air Jordan 30th",
+        "images": [
+            "Screens 1",
+            "Screens 2"
+        ]
     },
     {
         "id": "live-in-levis",
         "type": "work",
         "sublabel": "Levi's",
-        "label": "Eureka Innovation Lab"
+        "label": "Eureka Innovation Lab",
+        "images": [
+            "Main Floor Hotspots",
+            "Tailor Shop",
+            "Cutting Board",
+            "Dye Room",
+            "Explore Details"
+        ]
     },
     {
         "id": "pins",
         "type": "projects",
         "sublabel": "",
-        "label": "Pins"
+        "label": "Pins",
+        "imageCount": 12
     },
     {
         "id": "paint-by-numbers",
         "type": "projects",
         "sublabel": "",
-        "label": "Paint-by-Numbers"
+        "label": "Paint-by-Numbers",
+        "images": [
+            "Die Hard",
+            "Christmas Vacation",
+            "Reservoir Dogs",
+            "Robocop",
+            "Royal Tenenbaums",
+            "2014 Christmas Card"
+        ]
     },
     {
         "id": "social-cereal",
         "type": "projects",
         "sublabel": "",
-        "label": "Social Cereal"
+        "label": "Social Cereal",
+        "images": [
+            "Latest Tweets",
+            "Cereal Breakdown"
+        ]
     },
     {
         "id": "betamaxmas",
         "type": "projects",
         "sublabel": "",
-        "label": "BetamaXmas"
+        "label": "BetamaXmas",
+        "images": [
+            "The Onion",
+            "Vulture",
+            "USA Today"
+        ]
     },
     {
         "id": "minnecrapolis",
         "type": "projects",
         "sublabel": "",
-        "label": "Minnecrapolis"
+        "label": "Minnecrapolis",
+        "images": [
+            "Listening Party",
+            "Live"
+        ]
     },
     {
         "id": "faces",
         "type": "projects",
         "sublabel": "",
-        "label": "Faces"
+        "label": "Faces",
+        "imageCount": 8
+
     },
     {
         "id": "episogood",
         "type": "projects",
         "sublabel": "",
-        "label": "Episogood"
+        "label": "Episogood",
+        "images": [
+            "Main screen",
+            "How-to"
+        ]
     },
     {
         "id": "countdown",
         "type": "projects",
         "sublabel": "",
-        "label": "Inauguration Countdown"
+        "label": "Inauguration Countdown",
+        "images": [
+            "Diffusing",
+            "LEDs",
+            "Segment Plan",
+            "The Face",
+            "48",
+            "Styrofoam Padding",
+            "Segment Sketch",
+            "Test Lighting",
+            "The Shot"
+        ]
     },
     {
         "id": "ignite",

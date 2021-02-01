@@ -16,11 +16,33 @@
     <div class='box box--text'>
         <div class='fg'>
             <div class="placard">
+                <h2>
                 Description
+                </h2>
             </div>
         </div>
         <div class='bg'>
             {% block description %}{% endblock %}
         </div>
     </div>
+
+    {%- for item in content -%}
+        {% if item.id == page.fileSlug %}
+            {% for i in range(0, item.images.length) -%}
+                <div key={index} className="box box--image">
+                    <div class="fg">
+                        <div class="placard">
+                            <h3>{{item.images[i]}}</h3>
+                        </div>
+                    </div>
+                    <div class="bg">
+                        {% set supportingImage = page.fileSlug + "/" + i + ".jpg" %}
+                        {% picture supportingImage, item.images[i], '90vw', 'eager' %}
+                    </div>
+                </div>
+                {{ i }},
+                {{item.images[i]}}
+            {%- endfor %}
+        {% endif %}
+    {% endfor %}
 </main>

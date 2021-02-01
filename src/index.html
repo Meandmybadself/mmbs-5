@@ -20,6 +20,22 @@ title: Home
     </a>
   {%- endfor -%}    
 
+<main class="grid grid--home">
+  {%- for item in content -%}
+    <a href='/{{item.type}}/{{item.id}}' class='box box--{{item.id}}'>
+      <div class='fg'>
+        <div class='placard'>
+          {% if item.sublabel %}<h3>{{item.sublabel}}</h3>{% endif %}
+          <h2>{{item.label}}</h2>
+        </div>
+      </div>
+      <div class='shield'></div>
+      <div class='bg'>
+        {% capture thumbnailPath %}{{ item.id }}/thumbnail.jpg{% endcapture %}
+        {% picture thumbnailPath, 'Thumbnail', '90vw', 'lazy' %}
+      </div>
+    </a>
+  {%- endfor -%}    
   
 </main>
 

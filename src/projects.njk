@@ -1,0 +1,36 @@
+---
+layout: default.liquid
+title: Projects
+---
+
+<main class="grid grid--home">
+  {%- for item in content -%}
+    {% set href = '/' + item.type +'/' + item.id %}
+    
+    {% if item.url %}
+      {% set href = item.url %}
+    {% endif %} 
+
+    <a href={{href}} class='box box--{{item.id}}'>
+      <div class='fg'>
+        <div class='placard'>
+          {% if item.sublabel %}<h3>{{item.sublabel}}</h3>{% endif %}
+          <h2>{{item.label}}</h2>
+        </div>
+      </div>
+      <div class='shield'></div>
+      <div class='bg'>
+        {% set thumbnailPath = item.id + "/thumbnail.jpg" %}
+        {% picture thumbnailPath, 'Thumbnail', '90vw', 'lazy' %}
+      </div>
+    </a>
+  {%- endfor -%}    
+  
+</main>
+
+{% stylesheet 'scss' %}
+  // Import sass from your styles directory
+  @import "global";
+  @import "home";
+  
+{% endstylesheet %}

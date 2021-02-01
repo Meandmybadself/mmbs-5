@@ -1,0 +1,63 @@
+---
+label: Paint By Numbers
+sublabel: 
+---
+  <main class="grid grid--{{page.fileSlug}}">
+   {%- for item in content -%}
+        {% if item.id == page.fileSlug %}
+            {% for i in range(0, item.images.length) -%}
+                <div class="box box--image">
+                    <div class="fg">
+                        <div class="placard">
+                            <h2>{{item.images[i]}}</h2>
+                        </div>
+                    </div>
+                    <div class="bg">
+                        {% set supportingImage = page.fileSlug + "/" + i + ".jpg" %}
+                        {% picture supportingImage, item.images[i], '90vw', 'eager' %}
+                    </div>
+                </div>
+            {%- endfor %}
+        {% endif %}
+    {% endfor %}
+  </main>
+
+{% stylesheet 'scss' %}
+  @import 'global';
+  @import 'mixins';
+  .grid {
+    display: grid;
+    grid-gap: var(--gutter);
+    grid-auto-rows: 1fr;
+  }
+  $accent: #ebcd57;
+
+  .grid--paint-by-numbers {
+    .box {
+        grid-column-end: span 4;
+        .bg {
+          @include absfill();
+        }
+        min-height: 450px;
+        
+
+         &:nth-child(even) {
+        .fg {
+            flex-direction: row;    
+            align-items: center;
+            justify-content: flex-end;
+        }
+    }
+    &:nth-child(odd) {
+        .fg {
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+        }
+    }
+      }
+  }
+  
+    
+
+{% endstylesheet %}

@@ -1,0 +1,45 @@
+---
+label: Minnecrapolis
+sublabel: 
+---
+
+{% extends '../_layouts/work-header.njk' %}
+
+{% block description %}
+    <p>
+          I spun up a small email listserv amongst friends in 2013. Since then, it has organically blossomed into a Slack community with
+          over 400 people, <a href='https://live.minnecrapol.is'>its own internet radio station</a> & a tool-lending network.
+        </p>
+        <p>
+          We&rsquo;ve sent 475,000 messages with an average of 90 members active every day & has been a necessary part of my sanity in times
+          of pandemic.
+        </p>
+        <p>
+          Join today at <a href="https://minnecrapol.is">https://minnecrapol.is</a>
+        </p>
+
+{% endblock %}
+
+{% stylesheet 'scss' %}
+  $accent: #8d5e28;
+  @import 'global';
+  @import 'work';
+  .box {
+    a {
+      color: $accent;
+    }
+    min-height:400px;
+  }
+  .box--image {
+    .bg img,picture {
+        object-size: contain; 
+      }
+    &:nth-child(3) {
+      grid-area: 4/1/6/3;
+      
+    }
+    &:nth-child(4) {
+      grid-area: 4/3/6/5;
+    }
+  }
+{% endstylesheet %}

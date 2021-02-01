@@ -1,25 +1,16 @@
 @import "mixins";
 
 .grid {
-    display: grid;
-    grid-gap: var(--gutter);
-    transform-style: preserve-3d;
-    grid-template-columns: 1fr;
-    grid-auto-flow: dense;
-
-    @include med {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    @include lg {
-        grid-template-columns: repeat(4, 1fr);
-    }
 
     .box {
         cursor: pointer;
         grid-column-start: auto;
         grid-row-start: auto;
         @include sized();
+
+        .bg {
+            @include absfill();
+        }
 
         // For items where we want to adjust the bg positioning on an id-basis.
         &--evb {

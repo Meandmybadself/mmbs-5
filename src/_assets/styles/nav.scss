@@ -1,24 +1,37 @@
-
 nav {
   margin-bottom: 100px;
-  
-  div.title {
+  h1.title {
     font-family: "Chronicle Display A", "Chronicle Display B";
     font-style: normal;
     font-weight: 700;
-    font-size: 2.5em;
+    font-size: 3em;
     color: var(--content);
     text-align: center;
     margin-top: 100px;
+    a {
+      border-bottom: 1px solid rgba(0, 0, 0, 0);
+      transition: border 0.3s ease-out;
+      &:hover {
+        border-color: rgba(0, 0, 0, 1);
+      }
+    }
   }
 
   div.subtitle {
     text-align: center;
     font-family: "Ringside Condensed A", "Ringside Condensed B";
     text-transform: uppercase;
-    font-size: 0.925em;
+    font-size: 1.1em;
     margin-top: 15px;
     font-weight: 100;
+    a {
+      text-decoration: none;
+      color: var(--red);
+      border-bottom: 1px solid rgba(200,0,0,0);
+      &:hover {
+        border-color: rgba(200, 0, 0, 1);
+      }
+    }
   }
 
   ul.toc {
@@ -39,8 +52,9 @@ nav {
     text-transform: uppercase;
     font-size: 1.3em;
     transition: border 0.3s ease-out;
-    border-bottom: 1px solid rgba(255,255,255,0);
-    &:hover, &.active {
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    &:hover,
+    &.active {
       border-bottom: 1px solid var(--red);
     }
   }

@@ -1,0 +1,40 @@
+---
+label: Inauguration Countdown
+sublabel: 
+---
+
+{% extends '../_layouts/work-header.njk' %}
+
+{% block description %}
+    <p>
+          To celebrate the election of Joe Biden, I built a 4 foot tall countdown clock displaying the number of days until the inauguration
+          and hung it in my home office window.
+        </p>
+        <p>And with 13 days remaining in the countdown, someone shot at it, and we took it down.</p>
+{% endblock %}
+
+{% block attribution %}
+    <p>I completely ripped this project off from Steve Krulewitz &amp; got help with setting up logic level shifting from the crew at <a href='/projects/minnecrapolis'>Minnecrapolis</a> &amp; David Middlecamp.</p>
+{% endblock %}
+
+{% stylesheet 'scss' %}
+
+  $accent: #d42134;
+  @import 'global';
+  @import 'work';
+
+  .box {
+    &:nth-of-type(4) {
+      grid-area: 3/4/5/5;
+    }
+
+    &:nth-of-type(5) {
+      grid-area: 4/1/6/3;
+    }
+
+    &:nth-of-type(10) {
+      grid-area: 6/2/7/4;
+    }
+  }
+  
+{% endstylesheet %}

@@ -1,4 +1,6 @@
 @import "nav";
+@import "mixins";
+
 
 :root {
   --red: #cc0000;
@@ -36,6 +38,8 @@ html {
   color: var(--content);
 }
 
+
+
 #perspective-root {
   transform-style: preserve-3d;
   perspective: 40px;
@@ -53,206 +57,21 @@ html {
   transform-style: preserve-3d;
 }
 
-.box {
-  background-color: #eee;
-  text-decoration: none;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 225px;
+.grid {
+  display: grid;
+  grid-gap: var(--gutter);
   transform-style: preserve-3d;
+  grid-auto-flow: dense;
+  grid-template-rows: none;
+  grid-auto-rows: minmax(100px, auto);
 
-  div.fg,
-  div.bg,
-  div.shield {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
+  @include med {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  div.fg {
-    z-index: 3;
-    transform: translateZ(7px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    pointer-events: none;
-
-    div.placard {
-      pointer-events: all;
-      transform: translateZ(8px);
-      transform-style: preserve-3d;
-      transition: box-shadow 0.3s ease-out, transform 0.3s ease-out, background 0.3s ease-out;
-      padding: 5px 7px;
-      transform-origin: 50% 50%;
-      background: var(--placard-bg);
-      min-width: 8%;
-      max-width: 60%;
-
-      h2,
-      h3 {
-        margin: 0;
-        transform-style: preserve-3d;
-        transition: color 0.3s ease-out;
-      }
-      h2 {
-        font-weight: 500;
-        font-family: "Chronicle Display A", "Chronicle Display B";
-        font-size: 1.2em; // Shouldn't obscure the image.
-      }
-
-      h3 {
-        font-family: "Ringside Condensed A", "Ringside Condensed B";
-        color: #777;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        font-weight: 300;
-        font-size: 0.7em;
-      }
-    }
-  }
-
-  div.shield {
-    pointer-events: none;
-    z-index: 2;
-    opacity: 0.15;
-    transition: opacity 0.3s ease-out;
-  }
-
-  div.bg {
-    transform-style: preserve-3d;
-    transition: box-shadow 0.3s ease-out, transform 0.3s ease-out;
-  }
-
-  picture {
-    position: absolute;
-    z-index: 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    img,
-    source {
-      object-fit: cover;
-      position: absolute;
-      z-index: 0;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      transform-style: preserve-3d;
-      transition: box-shadow 0.3s ease-out, transform 0.3s ease-out, filter 0.3s ease-out;
-    }
-  }
-
-  // &--masthead {
-  //     pointer-events: none;
-  //     grid-area: 1/1/3/5;
-  //     min-height: 300px;
-
-  //     div.fg {
-  //         justify-content: flex-end !important;
-  //         align-items: center !important;
-  //         transform: translateZ(10px);
-
-  //         div.placard {
-  //             min-width: 15%;
-  //             max-width: 25%;
-  //             margin: 0 50px 0 0;
-  //             font-family: "Chronicle Display A", "Chronicle Display B"; // "SF-Pro-Display", Roboto, Sans-Serif;
-  //         }
-
-  //         h2 {
-  //             font-size: 1.25em !important;
-  //         }
-
-  //         h3 {
-  //             font-weight: 100 !important;
-  //             font-size: 0.75em !important;
-  //         }
-  //     }
-  // }
-
-  // &--description {
-  //     grid-area: 3/2/4/4;
-  //     pointer-events: default;
-  //     flex-direction: column;
-  //     color: #555;
-  //     background: none;
-  //     justify-content: flex-start !important;
-  //     align-items: flex-start !important;
-  //     font-family: "SF-Pro-Display", Roboto, Sans-Serif;
-
-  //     div.fg {
-  //         flex-direction: row;
-  //         align-items: flex-start;
-  //         justify-content: flex-start;
-  //     }
-
-  //     p,
-  //     ul {
-  //         font-kerning: auto;
-  //         font-language-override: normal;
-  //         font-optical-sizing: auto;
-  //         font-size: 1.1em;
-  //         font-size-adjust: none;
-  //         font-stretch: 100%;
-  //         font-variant-alternates: normal;
-  //         font-variant-caps: normal;
-  //         font-variant-east-asian: normal;
-  //         font-variant-ligatures: normal;
-  //         font-variant-numeric: normal;
-  //         font-variant-position: normal;
-  //         font-variation-settings: normal;
-  //         letter-spacing: normal;
-  //         line-height: 1.3em;
-  //         margin-bottom: 29.8375px;
-  //         overflow-wrap: break-word;
-  //         margin-top: 0;
-  //     }
-  // }
-
-  // &--heading-text {
-  //     font-family: "Ringside Condensed A", "Ringside Condensed B";
-  //     flex-direction: column;
-  //     align-items: flex-start;
-  //     padding: var(--gutter);
-  //     display: flex;
-  //     background-color: #555;
-
-  //     div.fg {
-  //         transform: translateZ(3px);
-  //         align-items: flex-start;
-  //         justify-content: flex-end;
-
-  //         div.placard {
-  //             min-width: 20%;
-  //             max-width: 25%;
-
-  //             h2 {
-  //                 font-size: 0.75em;
-  //             }
-  //         }
-  //     }
-
-  //     p {
-  //         font-size: 1.25em;
-  //         margin-top: 0;
-  //         color: white;
-  //     }
-  // }
-
-  &:hover {
-    div.fg {
-      div.placard {
-        box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.05);
-      }
-    }
-    div.shield {
-      opacity: 0;
-    }
+  @include lg {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
+
+@import "box";

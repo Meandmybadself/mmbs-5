@@ -1,0 +1,35 @@
+---
+label: Social Cereal
+sublabel:
+---
+
+{% extends '../_layouts/work-header.njk' %}
+
+{% block description %}
+    <p>A good data visualization should be able to clearly communicate the given state of a system. This one shows how many mentions a certain cereal received on Twitter in the past 24 hours in 3D.</p>
+    <p>
+        <a href="https://cereal.social">Visit Social Cereal</a>
+    </p>
+{% endblock %}
+
+{% stylesheet 'scss' %}
+  $accent: #d42134;
+  @import 'global';
+  @import 'work';
+  .box {
+    min-height: 350px;
+    &--image {
+      img {
+        object-position: top center;
+      }
+    }
+    &:nth-of-type(3) {
+      grid-area: 4/2/6/3;
+    }
+
+    &:nth-of-type(4) {
+      grid-area: 4/3/6/4;
+    }
+  }
+
+{% endstylesheet %}

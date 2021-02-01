@@ -1,0 +1,49 @@
+---
+label: Blink-182 / Big Boi AR Experience
+sublabel: Doritos
+---
+
+{% extends '../_layouts/work-header.njk' %}
+
+{% block description %}
+    <p>In 2009, I helped develop an augmented reality concert starring Blink-182 & Big Boi.</p>
+    <p>When someone bought a bag of Late Night Doritos, they'd go to the Doritos site, point their webcam at the bag & let the show begin.</p>
+    <p>
+        <a href='https://www.flickr.com/photos/meandmybadself/albums/72157617183850317'>The experience was filmed on a greenscreen soundstage in Culver City</a>, with a camera mounted on the ceiling, capturing the musicians' movements from the top for motion-tracking.</p>
+    <p>We composited the musicians onto a single texture layer & built the rest of the environment from scratch.</p>
+    <p>The final experience was built with Flash & Papervision (does anyone remember Papervision?)</p>
+{% endblock %}
+
+{% stylesheet 'scss' %}
+  $accent: #fe3700;
+
+  @import 'global';
+  @import 'work';
+
+  .grid--doritos {
+    .box {
+      min-height:400px;
+      &:nth-child(2) {
+        grid-area: 3/2/5/4;
+      }
+      
+      &:nth-child(3) {
+        grid-area: 5/1/7/3;
+      }
+
+      &:nth-child(4) {
+        grid-area: 5/3/7/5;
+      }
+
+      &:nth-child(5) {
+        grid-area: 7/1/9/3;
+      }
+      &:nth-child(6) {
+        grid-area: 7/3/9/5;
+      }
+    }
+  }
+
+    
+
+{% endstylesheet %}

@@ -1,0 +1,59 @@
+<main class="grid grid--{{page.fileSlug}}">
+    <div class="box box--masthead">
+        <div class="fg">
+            <div class="placard">
+                <h3>{{sublabel}}</h3>
+                <h1>{{label}}</h1>
+            </div>
+        </div>
+        <div class="bg">
+            {% set mastheadPath = page.fileSlug + "/masthead.jpg" %}
+            {% picture mastheadPath, 'Masthead', '90vw', 'eager' %}
+        </div>
+    </div>
+    
+ 
+    <div class='box box--text'>
+        <div class='fg'>
+            <div class="placard">
+                <h2>
+                Description
+                </h2>
+            </div>
+        </div>
+        <div class='bg'>
+            {% block description %}{% endblock %}
+        </div>
+    </div>
+
+    {%- for item in content -%}
+        {% if item.id == page.fileSlug %}
+            {% for i in range(0, item.images.length) -%}
+                <div class="box box--image">
+                    <div class="fg">
+                        <div class="placard">
+                            <h2>{{item.images[i]}}</h2>
+                        </div>
+                    </div>
+                    <div class="bg">
+                        {% set supportingImage = page.fileSlug + "/" + i + ".jpg" %}
+                        {% picture supportingImage, item.images[i], '90vw', 'eager' %}
+                    </div>
+                </div>
+            {%- endfor %}
+        {% endif %}
+    {% endfor %}
+
+    {%- for item in content -%}
+        {% if item.id == page.fileSlug %}
+            {% for i in range(0, item.imageCount) -%}
+                <div class="box box--image">
+                    <div class="bg">
+                        {% set supportingImage = page.fileSlug + "/" + i + ".jpg" %}
+                        {% picture supportingImage, 'Pin', '90vw', 'eager' %}
+                    </div>
+                </div>
+            {%- endfor %}
+        {% endif %}
+    {% endfor %}
+</main>

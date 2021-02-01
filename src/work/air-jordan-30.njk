@@ -1,0 +1,36 @@
+---
+label: Air Jordan 30th
+sublabel: Nike
+---
+
+{% extends '../_layouts/work-header.njk' %}
+
+{% block description %}
+ <p>
+    When our attractive friends @ AKQA needed a high-touch, responsive, internationalized site built to tell the story of the 30th
+    Anniversary of the Air Jordan sneaker, they gave us a call.
+</p>
+<p>
+    This experience tells the shoe’s making-of story and highlights NBA phenom Russell Westbrook... with beautiful animations... in
+    nine languages... and no text orphans.
+</p>
+{% endblock %}
+
+{% stylesheet 'scss' %}
+    $accent: #303646;
+    @import 'global';
+    @import 'work';
+
+    .box {
+      min-height: 200px;
+      &:nth-of-type(3) {
+        grid-area: 4/1/6/3;
+      }
+      &:nth-of-type(4) {
+        grid-area: 4/3/6/5;
+      }
+      &:nth-of-type(5) {
+        grid-area: 6/2/7/4;
+      }
+    }
+{% endstylesheet %}

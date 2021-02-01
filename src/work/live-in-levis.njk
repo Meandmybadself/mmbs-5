@@ -1,0 +1,41 @@
+---
+label: Eureka Innovation Lab
+sublabel: Levi's
+---
+
+{% extends '../_layouts/work-header.njk' %}
+
+{% block description %}
+<p>
+    When our intelligent friends @ AKQA needed help building a site exploring the Levi&rsquo;s Eureka Innovation Lab, they sent us a
+    fax.
+</p>
+<p>
+    What resulted was a responsive site that let the public get a first-person view inside Levi&rsquo;s unique research & development
+    space in Eureka, California.
+</p>
+<p>
+    <a href="https://levis.prmr.ec">View archived site</a>
+</p>
+{% endblock %}
+
+{% stylesheet 'scss' %}
+  $accent: #4259a1;
+  @import 'global';
+  @import 'work';
+
+  .box {
+    &:nth-child(3) {
+      grid-area: 5/2/6/4;
+    }
+    &:nth-child(4) {
+      grid-area: 4/1/6/2;
+    }
+    &:nth-child(5) {
+      grid-area: 4/2/5/4;
+    }
+    &:nth-child(6) {
+      grid-area: 4/4/6/5;
+    }
+  }
+{% endstylesheet %}

@@ -1,20 +1,15 @@
 {
-  "name": "twelvety",
-  "version": "1.2.2",
-  "description": "A pre-configured, super-fast Eleventy starter project",
+  "name": "mmbs-5",
+  "version": "1.0.0",
+  "description": "Me & My Bad Self - Mark V",
   "scripts": {
     "clean": "rimraf dist .twelvety.cache",
     "build": "cross-env ELEVENTY_ENV=production eleventy",
     "watch": "cross-env ELEVENTY_ENV=development eleventy --watch",
     "serve": "cross-env ELEVENTY_ENV=development eleventy --serve"
   },
-  "repository": "https://github.com/gregives/twelvety",
-  "keywords": [
-    "eleventy",
-    "starter",
-    "project"
-  ],
-  "author": "Greg Ives",
+  "repository": "https://github.com/meandmybadself/mmbs-5",
+  "author": "Jeffery Bennett",
   "license": "MIT",
   "dependencies": {
     "@11ty/eleventy": "^0.11.1",

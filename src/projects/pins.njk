@@ -1,0 +1,43 @@
+---
+label: Pins
+sublabel: 
+---
+
+{% extends '../_layouts/work-header.njk' %}
+
+{% block description %}
+    <p>I&rsquo;ve wanted a pin-making machine since I was in junior high. Turns out, they&rsquo;re relatively inexpensive.</p>
+    <p>Owning a pin maker provides a great opportunity to make super-ephemeral statements.</p>
+{% endblock %}
+
+{% stylesheet 'scss' %}
+  $accent: #d42134;
+  @import 'global';
+  @import 'work';
+  
+  .grid {
+    display: grid;
+    grid-gap: var(--gutter);
+    grid-auto-rows: 1fr;
+  }
+  .box {
+
+    &:nth-of-type(2) {
+      grid-area: 3/1/4/3;
+    }
+
+    // desc
+    &:nth-of-type(3) {
+      grid-area: 3/3/5/5;
+    }
+
+    &:nth-of-type(4) {
+      grid-area: 5/1/7/3;
+    }
+
+   
+  }
+  
+    
+
+{% endstylesheet %}

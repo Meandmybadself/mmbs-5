@@ -4,27 +4,30 @@ title: Projects
 ---
 
 <main class="grid grid--home">
-  {%- for item in content -%}
-    {% set href = '/' + item.type +'/' + item.id %}
-    
-    {% if item.url %}
-      {% set href = item.url %}
-    {% endif %} 
+  {% for item in content %}
+    {% if item.type == 'projects' %}
+      {% set href = '/' + item.type +'/' + item.id %}
+      
+      {% if item.url %}
+        {% set href = item.url %}
+      {% endif %} 
 
-    <a href={{href}} class='box box--{{item.id}}'>
-      <div class='fg'>
-        <div class='placard'>
-          {% if item.sublabel %}<h3>{{item.sublabel}}</h3>{% endif %}
-          <h2>{{item.label}}</h2>
+      <a href={{href}} class='box box--{{item.id}}'>
+        <div class='fg'>
+          <div class='placard'>
+            {% if item.sublabel %}<h3>{{item.sublabel}}</h3>{% endif %}
+            <h2>{{item.label}}</h2>
+          </div>
         </div>
-      </div>
-      <div class='shield'></div>
-      <div class='bg'>
-        {% set thumbnailPath = item.id + "/thumbnail.jpg" %}
-        {% picture thumbnailPath, 'Thumbnail', '90vw', 'lazy' %}
-      </div>
-    </a>
-  {%- endfor -%}    
+        <div class='shield'></div>
+        <div class='bg'>
+          {% set thumbnailPath = item.id + "/thumbnail.jpg" %}
+          {% picture thumbnailPath, 'Thumbnail', '90vw', 'lazy' %}
+        </div>
+      </a>
+    {% endif %}
+  {% endfor %}    
+  
   
 </main>
 

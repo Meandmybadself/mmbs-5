@@ -15,6 +15,22 @@
   bottom:0;
 }
 
+@mixin placard-left {
+ .fg {
+    flex-direction: row;    
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+@mixin placard-right {
+  .fg {
+    flex-direction: row;    
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
 @mixin med {
   @media (min-width: 500px) {
     @content;

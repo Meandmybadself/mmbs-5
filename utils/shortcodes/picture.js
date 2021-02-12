@@ -78,6 +78,12 @@ module.exports = function(src, alt, sizes = '90vw, (min-width: 1280px) 1152px', 
   if (alt === undefined)
     throw new Error('Images should always have an alt tag')
 
+  return `
+    <picture style="background-color:#CCC;">
+      <img src="${src}" alt="${alt}" loading="${loading}">
+    </picture>
+  `
+
   const imagePath = getImagePath(src)
 
   // Original image in sharp

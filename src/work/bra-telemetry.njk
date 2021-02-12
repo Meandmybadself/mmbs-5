@@ -7,20 +7,27 @@ sublabel: Target
 
 {% block description %}
     <p>
-          After hearing that bras were being designed by interviewing women asking about their fit, I proposed that we bring telemetry into
-          the mix.
-        </p>
-        <p>
-          We added an array of wireless gyroscopes & accelerometers to the outside of bras being tested, which painted a much clearer
-          picture of the bra&rsquo;s fit.
-        </p>
+      After hearing that bras were being designed by interviewing women asking about their fit, I proposed that we bring telemetry into
+      the mix.
+    </p>
+    <p>
+      We added an array of wireless telemetry to the outside of bras being tested, which painted a much clearer
+      picture of the bra&rsquo;s fit.  The sensors communicated to a browser-based client with low-energy Bluetooth.
+    </p>
+    <p>
+      We also learned that Altoid tins make for poor containers of radio equipment &amp; that cloth/plastic are a better option.
+    </p>
 {% endblock %}
 
 {% stylesheet 'scss' %}
   $accent: #ef4d78;
   @import 'global';
-  @import 'work';
+  @import 'details';
   .box--image {
+    .bg picture, img {
+      object-position: top;
+      object-size: contain;
+    }
     &:nth-of-type(3) {
       grid-area: 4/1/6/3;
     }

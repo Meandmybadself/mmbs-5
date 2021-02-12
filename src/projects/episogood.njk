@@ -1,6 +1,7 @@
 ---
 label: Episogood
 sublabel: 
+hasAttribution: true
 ---
 
 {% extends '../_layouts/details.njk' %}
@@ -29,20 +30,31 @@ sublabel:
   $accent: #d42134;
 
   @import 'global';
-  @import 'work';
+  @import 'details';
   
-  .box {
-    min-height:350px;
-    &:nth-child(3) {
-      grid-area: 4/1/5/3;
-      picture,img {
-        object-fit: contain;
+  .grid {
+    .box {
+      min-height:300px;
+      &--masthead {
+        grid-area: 1/1/3/5;
       }
-    }
-    &:nth-child(4) {
-      grid-area: 4/3/5/5;
-      img,picture {
-        object-fit: contain;
+      &--text:nth-child(2) {
+        grid-area: 3/2/4/4;
+      }
+      &--text:nth-child(3) {
+        grid-area: 4/2/5/4;
+      }
+      &:nth-child(4) {
+        grid-area: 5/1/6/3;
+        picture,img {
+          object-fit: contain;
+        }
+      }
+      &:nth-child(5) {
+        grid-area: 5/3/6/5;
+        img,picture {
+          object-fit: contain;
+        }
       }
     }
   }

@@ -1,6 +1,7 @@
 ---
 label: Text-a-Target
 sublabel: Target
+hasAttribution: true
 ---
 
 {% extends '../_layouts/details.njk' %}
@@ -13,10 +14,13 @@ sublabel: Target
   <p>Thanks to Scott Vehrenkamp for the NLP assistance.</p>
 {% endblock %}
 
+{% block attribution %}
+{% endblock %}
+
 {% stylesheet 'scss' %}
   $accent: #d42134;
   @import 'global';
-  @import 'work';
+  @import 'details';
   
   .grid--text-a-target {
     grid-auto-rows: 350px;

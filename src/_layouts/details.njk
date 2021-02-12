@@ -1,4 +1,4 @@
-<main class="grid grid--{{page.fileSlug}}">
+<main class="grid grid--{{page.fileSlug}} grid--details {% if hasAttribution %}grid--attribution{% endif %}">
     <div class="box box--masthead">
         <div class="fg">
             <div class="placard">
@@ -12,7 +12,6 @@
         </div>
     </div>
     
- 
     <div class='box box--text'>
         <div class='fg'>
             <div class="placard">
@@ -25,6 +24,21 @@
             {% block description %}{% endblock %}
         </div>
     </div>
+
+    {% if hasAttribution %}
+    <div class='box box--text'>
+        <div class='fg'>
+            <div class="placard">
+                <h2>
+                Special Thanks
+                </h2>
+            </div>
+        </div>
+        <div class='bg'>
+            {% block attribution %}{% endblock %}
+        </div>
+    </div>
+    {% endif %}
 
     {%- for item in content -%}
         {% if item.id == page.fileSlug %}

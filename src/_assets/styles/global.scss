@@ -38,7 +38,9 @@ html {
   color: var(--content);
 }
 
-
+.mb-5 {
+  margin-bottom:8px;
+}
 
 #perspective-root {
   transform-style: preserve-3d;

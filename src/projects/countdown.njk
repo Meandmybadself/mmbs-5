@@ -1,6 +1,7 @@
 ---
 label: Inauguration Countdown
 sublabel: 
+hasAttribution: true
 ---
 
 {% extends '../_layouts/details.njk' %}
@@ -12,25 +13,25 @@ sublabel:
 {% endblock %}
 
 {% block attribution %}
-    <p>I completely ripped this project off from Steve Krulewitz &amp; got help with setting up logic level shifting from the crew at <a href='/projects/minnecrapolis'>Minnecrapolis</a> &amp; David Middlecamp.</p>
+    <p>I completely ripped this project off from <a href='https://twitter.com/skrul'>Steve Krulewitz</a> &amp; got help with setting up logic level shifting from the crew at <a href='/projects/minnecrapolis'>Minnecrapolis</a> &amp; David Middlecamp.</p>
 {% endblock %}
 
 {% stylesheet 'scss' %}
 
   $accent: #d42134;
   @import 'global';
-  @import 'work';
+  @import 'details';
 
   .box {
-    &:nth-of-type(4) {
+    &:nth-of-type(5) {
       grid-area: 3/4/5/5;
     }
 
-    &:nth-of-type(5) {
+    &:nth-of-type(6) {
       grid-area: 4/1/6/3;
     }
 
-    &:nth-of-type(10) {
+    &:nth-of-type(11) {
       grid-area: 6/2/7/4;
     }
   }

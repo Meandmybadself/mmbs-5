@@ -1,6 +1,7 @@
 ---
 label: Blink-182 / Big Boi AR Experience
 sublabel: Doritos
+hasAttribution: true
 ---
 
 {% extends '../_layouts/details.njk' %}
@@ -14,11 +15,14 @@ sublabel: Doritos
     <p>The final experience was built with Flash & Papervision (does anyone remember Papervision?)</p>
 {% endblock %}
 
+{% block attribution %}
+{% endblock %}
+
 {% stylesheet 'scss' %}
   $accent: #fe3700;
 
   @import 'global';
-  @import 'work';
+  @import 'details';
 
   .grid--doritos {
     .box {

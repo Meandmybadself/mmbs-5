@@ -1,6 +1,7 @@
 ---
 label: Disrupt 
 sublabel: TechCrunch
+hasAttribution: true
 ---
 
 {% extends '../_layouts/details.njk' %}
@@ -10,10 +11,13 @@ sublabel: TechCrunch
     <p>My responsibilities involved organizing & emceeing the annual Hackathon.</p>
 {% endblock %}
 
+{% block attribution %}
+{% endblock %}
+
 {% stylesheet 'scss' %}
   $accent: #00bf5c;
   @import 'global';
-  @import 'work';
+  @import 'details';
   .grid--disrupt {
     .box {
       min-height:350px;

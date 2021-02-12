@@ -10,30 +10,20 @@ hasAttribution: true
     <p>To celebrate the election of Joe Biden, I built a 4 foot tall countdown clock displaying the number of days until the inauguration
           and hung it in my home office window.</p>
     <p>And with 13 days remaining in the countdown, someone shot at it, and we took it down.</p>
+    <p><a href='https://gist.github.com/Meandmybadself/298632506d3f1b11924c0decf08ca02a'>Source code & parts list.</a></p>
 {% endblock %}
 
 {% block attribution %}
-    <p>I completely ripped this project off from <a href='https://twitter.com/skrul'>Steve Krulewitz</a> &amp; got help with setting up logic level shifting from the crew at <a href='/projects/minnecrapolis'>Minnecrapolis</a> &amp; David Middlecamp.</p>
+    <p>I stole this concept from <a href='https://twitter.com/skrul'>Steve Krulewitz</a>. I learned about it from Daniel Raffel who sent it my way. I learned about logic level shifting from the crew at <a href='/projects/minnecrapolis'>Minnecrapolis</a> &amp; David Middlecamp.</p>
 {% endblock %}
 
 {% stylesheet 'scss' %}
 
   $accent: #d42134;
   @import 'global';
+  @import 'mixins';
   @import 'details';
 
-  .box {
-    &:nth-of-type(5) {
-      grid-area: 3/4/5/5;
-    }
-
-    &:nth-of-type(6) {
-      grid-area: 4/1/6/3;
-    }
-
-    &:nth-of-type(11) {
-      grid-area: 6/2/7/4;
-    }
-  }
+  @include lastImageCentered();
   
 {% endstylesheet %}

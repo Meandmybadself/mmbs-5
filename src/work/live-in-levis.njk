@@ -1,7 +1,6 @@
 ---
 label: Eureka Innovation Lab
 sublabel: Levi's
-hasAttribution: true
 ---
 
 {% extends '../_layouts/details.njk' %}
@@ -21,25 +20,15 @@ hasAttribution: true
 {% endblock %}
 
 {% block attribution %}
+    <p>Thanks to Max Thorson for his development assistance on this project.</p>
 {% endblock %}
 
 {% stylesheet 'scss' %}
   $accent: #4259a1;
   @import 'global';
+  @import 'mixins';
   @import 'details';
 
-  .box {
-    &:nth-child(3) {
-      grid-area: 5/2/6/4;
-    }
-    &:nth-child(4) {
-      grid-area: 4/1/6/2;
-    }
-    &:nth-child(5) {
-      grid-area: 4/2/5/4;
-    }
-    &:nth-child(6) {
-      grid-area: 4/4/6/5;
-    }
-  }
+  @include lastImageCentered();
+
 {% endstylesheet %}

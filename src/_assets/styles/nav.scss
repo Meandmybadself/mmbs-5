@@ -1,13 +1,22 @@
+@import 'mixins';
+
 nav {
-  margin-bottom: 100px;
+  margin-bottom:var(--gutter);
+  @include med {
+    margin-bottom: 100px;
+  }
   h1.title {
     font-family: "Chronicle Display A", "Chronicle Display B";
     font-style: normal;
     font-weight: 700;
-    font-size: 3em;
     color: var(--content);
     text-align: center;
-    margin-top: 100px;
+    margin-bottom:0;
+    margin-top:var(--gutter);
+    @include med {
+      font-size: 3em;
+      margin-top: 100px;
+    }
     a {
       border-bottom: 1px solid rgba(0, 0, 0, 0);
       transition: border 0.3s ease-out;
@@ -21,8 +30,12 @@ nav {
     text-align: center;
     font-family: "Ringside Condensed A", "Ringside Condensed B";
     text-transform: uppercase;
-    font-size: 1.1em;
-    margin-top: 15px;
+    font-weight: 400;
+
+    @include med {
+      font-size: 1.1em;
+      margin-top: 15px;
+    }
     font-weight: 100;
     a {
       text-decoration: none;
@@ -31,31 +44,6 @@ nav {
       &:hover {
         border-color: rgba(200, 0, 0, 1);
       }
-    }
-  }
-
-  ul.toc {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0;
-    list-style: none;
-  }
-
-  ul.toc a {
-    font-family: "Ringside Condensed A", "Ringside Condensed B";
-    font-style: normal;
-    font-weight: 400;
-    text-decoration: none;
-    color: var(--red);
-    text-transform: uppercase;
-    font-size: 1.3em;
-    transition: border 0.3s ease-out;
-    border-bottom: 1px solid rgba(255, 255, 255, 0);
-    &:hover,
-    &.active {
-      border-bottom: 1px solid var(--red);
     }
   }
 }

@@ -18,23 +18,12 @@ hasAttribution: true
 {% endblock %}
 
 {% block attribution %}
+    <p>Nike is a discerning client, and I never would have gotten this completed to their high standards without the development help of Max Thorson.</p>
 {% endblock %}
 
 {% stylesheet 'scss' %}
-    $accent: #303646;
+    $accent: #505676;
     @import 'global';
     @import 'details';
 
-    .box {
-      min-height: 200px;
-      &:nth-of-type(3) {
-        grid-area: 4/1/6/3;
-      }
-      &:nth-of-type(4) {
-        grid-area: 4/3/6/5;
-      }
-      &:nth-of-type(5) {
-        grid-area: 6/2/7/4;
-      }
-    }
 {% endstylesheet %}

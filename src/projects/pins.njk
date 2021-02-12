@@ -11,33 +11,14 @@ sublabel:
 {% endblock %}
 
 {% stylesheet 'scss' %}
-  $accent: #d42134;
+  $accent: #ED6B5D;
   @import 'global';
+  @import 'mixins';
   @import 'details';
   
-  .grid {
+  .grid.grid--pins.grid--details {
     display: grid;
-    grid-gap: var(--gutter);
-    grid-auto-rows: 1fr;
+
+    @include fourImages();
   }
-  .box {
-
-    &:nth-of-type(2) {
-      grid-area: 3/1/4/3;
-    }
-
-    // desc
-    &:nth-of-type(3) {
-      grid-area: 3/3/5/5;
-    }
-
-    &:nth-of-type(4) {
-      grid-area: 5/1/7/3;
-    }
-
-   
-  }
-  
-    
-
 {% endstylesheet %}

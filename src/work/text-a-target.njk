@@ -2,6 +2,7 @@
 label: Text-a-Target
 sublabel: Target
 hasAttribution: true
+isDoubleHeight: true
 ---
 
 {% extends '../_layouts/details.njk' %}
@@ -11,43 +12,24 @@ hasAttribution: true
   <p>One of the stops was standing up an SMS-based store search, which allowed users without the Target application to find items in
         the store.</p>
   <p>The service ran for 8 months in 47 stores and sent/received over 500,000 messages.</p>
-  <p>Thanks to Scott Vehrenkamp for the NLP assistance.</p>
+  
 {% endblock %}
 
 {% block attribution %}
+  <p>Thanks to <a href='https://github.com/SVehrenkamp'>Scott Vehrenkamp</a> for pointers on natural language processing. The boy is one smart cookie.</p>
 {% endblock %}
 
 {% stylesheet 'scss' %}
   $accent: #d42134;
   @import 'global';
+  @import 'mixins';
   @import 'details';
   
-  .grid--text-a-target {
-    grid-auto-rows: 350px;
-    
-    .box {
-      
-      &:nth-child(1) {
-        grid-area: 1/1/2/5;
-      }
-      &:nth-child(2) {
-        grid-area: 2/2/3/4;
-      }
-
-      &:nth-child(3) {
-        grid-area: 3/1/4/3;
-      }
-      &:nth-child(4) {
-        grid-area: 3/3/4/5;
-      }
-    }
+  .grid.grid--text-a-target {
     .box--image {
-      &:nth-child(3),
-      &:nth-child(4) {
-        img {
-          object-position: center top;
-        }
+        @include topAlignImage();
       }
-    }
   }
+
+
 {% endstylesheet %}

@@ -1,6 +1,7 @@
 ---
 label: Doll Creator
 sublabel: Manhattan Toy Co.
+isDoubleHeight: true
 ---
 
 {% extends '../_layouts/details.njk' %}
@@ -22,13 +23,20 @@ sublabel: Manhattan Toy Co.
   @import 'global';
   @import 'mixins';
   @import 'details';
-  
+
   .grid {
-    .box {
-      min-height:250px;
-    }
-    div.box--image {
-      @include half-text-height();
+    @include lastImageCentered();
+    .box.box--image {
+      .bg {
+        picture, img {
+          object-fit: contain;
+        }
+        background-color: #FEF2E7;
+        picture, img {
+          background-color: #FEF2E7;
+        }
+      }
     }
   }
+
 {% endstylesheet %}

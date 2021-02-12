@@ -1,0 +1,30 @@
+---
+label: Killing Me Softly (no times remix)
+sublabel:
+hasAudio: true
+---
+
+{% extends '../_layouts/details.njk' %}
+
+{% block description %}    
+  <audio controls>
+      <source src="/_assets/media/{{page.fileSlug}}/audio.mp3" type="audio/mpeg">
+      Your browser does not support the audio tag.
+  </audio> 
+  <p>When I heard the first demos of <a href='https://github.com/deezer/spleeter'>Spleeter</a>, I began thinking about how it could be used to remove song blemishes.</p>
+  <p>Ever since <i>The Score</i> came out in 1996, hearing Lauryn Hill's amazing voice juxtaposed with Wyclef's has always been nails on a chalkboard to me.</p>
+  <p>Using Spleeter, I separated the track into four stems: <i>vocal</i>, <i>drums</i>, <i>bass</i> &amp; <i>other</i>. And then, using Audacity, I copied &amp; pasted Wyclef out of the song.</p>
+  <p>It&rsquo;s far from perfect and has the audio phantom limb of Wyclef, but I got to hear a rough cut of the song that I always wanted.</p>
+{% endblock %}
+
+{% stylesheet 'scss' %}
+    $accent: #B14407;
+    @import 'global';
+    @import 'details';
+
+    audio {
+      width: 100%;
+      margin-bottom:20px;
+    }
+
+{% endstylesheet %}

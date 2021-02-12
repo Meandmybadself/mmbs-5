@@ -1,67 +1,100 @@
-.grid--details {
+@import 'mixins';
+
+.grid {
+    @include masthead();
+    @include text();
+    @include wideImages();
+    display: block;
+
+    .accent {
+        color: $accent;
+    }
+    
+    
+    @include med {
+        display: grid;
+    }
+
     .box {
-        min-height: 400px;
+        margin-bottom: var(--gutter);
+        @include med {
+            margin-bottom: none;
+        }
         a {
             color: $accent;
-            text-decoration: none !important;
-            border-bottom: 1px solid $accent;
         }
-        &--masthead {
-            .fg .placard h1 {
-                color: $accent !important;
-            }
-        }
-        div.fg {
-            div.placard {
-                transform: translateZ(3px) !important;
-                box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.09);
-                h2 {
-                    color: $accent !important;
+        .fg {
+            .placard {
+                h1, h2 {
+                    color: $accent;
                 }
+            } 
+        }
+        
+        &.box--link {
+            display:none;
+
+            @include med {
+                display: flex;
             }
-        }
-        &--masthead, &--image {
-            .bg {
-                @include absfill();
+            font-family: "Ringside Condensed A", "Ringside Condensed B";
+            font-weight: 400;
+            align-items: flex-start;
+            justify-content: flex-start;
+            text-transform: uppercase;
+            grid-column: span 1;
+            span {
+                margin-right: 5px;
+                color: var(--content);
             }
-        }
-        &--masthead {
-            grid-area: 1/1/3/5;
-        }
-        &--text {
-            grid-area: 3/2/4/4;
+            a {
+                text-decoration: none;
+                color: $accent;
+                border-bottom: 1px solid rgba(255,255,255,0);
+                transition: border 0.3s ease-out;
+                &:hover {
+                    border-color: $accent;
+                } 
+            }
+            &.box--next {
+                justify-content: flex-end;
+            }
         }
 
-        &--image {
+       
+        &.box--image {
+            min-height: 400px;
             &:nth-child(even) {
-                @include placard-right()  
+                @include placard-right();
             }
             &:nth-child(odd) {
                 @include placard-left();
             }
         }
+
+        
+        
+    }
+
+     &.grid--2x {
+        // Doubles the height of the 
+        @include masthead(2);
+        @include wideImages(2);
     }
 
     &.grid--attribution {
         .box {
-            &--text:nth-child(3) {
-                @include placard-right();
-                grid-area: 4/2/5/4;
+            &:nth-child(odd):not(.box--masthead) {
+                @include placard-left();
             }
-            &--image {
-                &:nth-child(even) {
-                    @include placard-left()  
-                }
-                &:nth-child(odd) {
-                    @include placard-right();
-                }
+            &:nth-child(even):not(.box--masthead) {
+                @include placard-right();
+            }
+            &.box--text.box--attribution {
+                @include placard-right();
+                @include placard-top();
             }
         }
-    }
-}
-
-@mixin half-text-height {
-    .box--masthead .box--image {
-        grid-row: span 2;
+        
     }
 }

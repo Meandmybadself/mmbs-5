@@ -1,7 +1,6 @@
 ---
 label: Flagship Site
 sublabel: The New Wheel
-hasAttribution: true
 ---
 
 {% extends '../_layouts/details.njk' %}
@@ -10,40 +9,12 @@ hasAttribution: true
     <p>We added a new coat of paint to The New Wheel mothership, visually integrating its website, <a href='https://blog.newwheel.net/'>Tumblr blog</a>, scheduling system, inventory management system and knowledge base under a new visual direction.</p>
 {% endblock %}
 
-{% block attribution %}
-{% endblock %}
-
 {% stylesheet 'scss' %}
   $accent: #9e191b;
   @import 'global';
   @import 'details';
-  .box {
-    &:nth-of-type(3) {
-      grid-area: 4/1/7/3;
-      .bg {
-        img {
-          object-position: top center;
-        }
-      }
-    }
-
-    &:nth-of-type(4) {
-      grid-area: 4/3/7/5;
-      
-
-      .bg {
-        img {
-          object-position: top center;
-        }
-      }
-    }
-
-    &:nth-of-type(5) {
-      grid-area: 7/2/8/4;
-
-      .bg {
-        background-position: top center;
-      }
-    }
+  .grid {
+    @include topAlignImage();
+    @include lastImageCentered();
   }
 {% endstylesheet %}

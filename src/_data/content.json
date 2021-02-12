@@ -181,9 +181,9 @@
             "LEDs",
             "Segment Plan",
             "The Face",
-            "48",
+            "49",
             "Styrofoam Padding",
-            "Segment Sketch",
+            "Wiring Sketch",
             "Test Lighting",
             "The Shot"
         ]
@@ -206,20 +206,34 @@
         "id": "sxsw-2008",
         "type": "media",
         "sublabel": "SxSW",
-        "label": "Worst Website Ideas 2008", 
+        "label": "Worst Website 2008", 
         "url": "https://www.youtube.com/watch?v=xUWJnn1-FSk"
     },
     {
         "id": "sxsw-2006",
         "type": "media",
         "sublabel": "SxSW",
-        "label": "Worst Website Ideas 2006", 
+        "label": "Worst Website 2006", 
         "url": "https://vimeo.com/819738"
     },
     {
         "id": "killing-me-softly",
-        "type": "audio",
+        "type": "sounds",
         "label": "Killing Me Softly (no times mix)",
         "sublabel": ""
+    },
+    {
+        "id": "point-of-view",
+        "type": "media",
+        "label": "Point of View",
+        "sublabel":"",
+        "url": "https://youtu.be/rEA3N0QyvdE"
+    },
+    {
+        "id": "for-fern",
+        "type": "media",
+        "label":"For Fern",
+        "sublabel": "",
+        "url": "https://www.youtube.com/watch?v=Q9o0hE2oI0o"
     }
 ]

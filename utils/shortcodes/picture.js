@@ -78,11 +78,12 @@ module.exports = function(src, alt, sizes = '90vw, (min-width: 1280px) 1152px', 
   if (alt === undefined)
     throw new Error('Images should always have an alt tag')
 
-  return `
-    <picture style="background-color:#CCC;">
-      <img src="${src}" alt="${alt}" loading="${loading}">
-    </picture>
-  `
+  // Skip image generation.
+  // return `
+  //   <picture style="background-color:#CCC;">
+  //     <img src="${src}" alt="${alt}" loading="${loading}">
+  //   </picture>
+  // `
 
   const imagePath = getImagePath(src)
 
@@ -92,8 +93,8 @@ module.exports = function(src, alt, sizes = '90vw, (min-width: 1280px) 1152px', 
   // Hash the original image
   const imageHash = hashContent(deasyncSharp(original, 'toBuffer'))
 
-  // Load cache of resized images
-  const cache = loadCache()
+  // Load cache of resized images if in development mode.
+  const cache = process.env.ELEVENTY_ENV !== 'production' ? loadCache() : {}
   const cachePicture = cache.hasOwnProperty(imageHash) && cache[imageHash]
 
   // Get metadata from original image

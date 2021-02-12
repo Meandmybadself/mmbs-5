@@ -39,22 +39,31 @@ sublabel:
           @include absfill();
         }
         min-height: 450px;
-        
 
-         &:nth-child(even) {
-        .fg {
-            flex-direction: row;    
-            align-items: center;
-            justify-content: flex-end;
+        &.box--image {
+            @include full();
+            &:nth-child(even) {
+                @include placard-left();
+            }
+            &:nth-child(odd) {
+                @include placard-right();
+            }
+        }           
+
+        {# &:nth-child(even) {
+            .fg {
+                flex-direction: row;    
+                align-items: center;
+                justify-content: flex-end;
+            }
         }
-    }
-    &:nth-child(odd) {
-        .fg {
-            flex-direction: row;
-            align-items: center;
-            justify-content: flex-start;
-        }
-    }
+        &:nth-child(odd) {
+            .fg {
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+            }
+        } #}
       }
   }
   

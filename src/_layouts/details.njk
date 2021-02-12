@@ -1,9 +1,9 @@
-<main class="grid grid--{{page.fileSlug}} grid--details {% if hasAttribution %}grid--attribution{% endif %}">
+<main class="grid grid--{{page.fileSlug}} grid--details {% if hasAttribution %}grid--attribution{% endif %} {%if isDoubleHeight %}grid--2x{% endif %}">
     <div class="box box--masthead">
         <div class="fg">
             <div class="placard">
                 <h3>{{sublabel}}</h3>
-                <h1>{{label}}</h1>
+                <h1>{{label}}</h1>  
             </div>
         </div>
         <div class="bg">
@@ -11,6 +11,17 @@
             {% picture mastheadPath, 'Masthead', '90vw', 'eager' %}
         </div>
     </div>
+
+    {% for i in range(0, content.length) %}
+        {% if content[i].id == page.fileSlug %}
+            {% set link = content[i-1] %}
+                <div class='box box--link box--prev'>
+                    {% if link and (link.type !== 'media') %}
+                    <span>Prev: </span><a href='/{{link.type}}/{{link.id}}'>{{link.label}}</a>
+                    {% endif %}
+                </div>
+        {% endif %}
+    {% endfor %}
     
     <div class='box box--text'>
         <div class='fg'>
@@ -25,8 +36,21 @@
         </div>
     </div>
 
+    
+
+     {% for i in range(0, content.length) %}
+        {% if content[i].id == page.fileSlug %}
+            {% set link = content[i+1] %}
+                <div class='box box--link box--next'>
+                {% if link and (link.type !== 'media') %}
+                    <span>Next: </span><a href='/{{link.type}}/{{link.id}}'>{{link.label}}</a>
+                {% endif %}
+                </div>
+            {% endif %}
+    {% endfor %}
+
     {% if hasAttribution %}
-    <div class='box box--text'>
+    <div class='box box--text box--attribution'>
         <div class='fg'>
             <div class="placard">
                 <h2>
@@ -39,6 +63,8 @@
         </div>
     </div>
     {% endif %}
+
+  
 
     {%- for item in content -%}
         {% if item.id == page.fileSlug %}

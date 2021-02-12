@@ -1,18 +1,25 @@
 @import "mixins";
 
 .grid {
+    display:flex;
+    flex-direction: column;
+
+    @include med {
+        display: grid;
+    }
 
     .box {
         cursor: pointer;
         grid-column-start: auto;
         grid-row-start: auto;
         @include sized();
+        min-height: 250px;
 
         .bg {
             @include absfill();
         }
 
-        // For items where we want to adjust the bg positioning on an id-basis.
+        // For items where we want to adjust the bg pxositioning on an id-basis.
         &--evb {
             .bg {
                 picture {
@@ -29,8 +36,7 @@
         }
 
         &:nth-child(6) {
-            @include sized(1, 2);
-            // grid-area: 3 / 2 / 5 / 4;
+            @include sized(2, 1);
         }
 
         &:nth-child(10) {
@@ -44,6 +50,10 @@
         &:nth-child(12) {
             @include sized(2, 2);
         }
+        &:nth-child(13) {
+            @include sized(2, 1);
+        }
+
 
         &:nth-child(15) {
             @include sized(2, 1);
@@ -56,9 +66,20 @@
         &:nth-child(19) {
             @include sized(2, 2);
         }
-        &:nth-child(22) {
-            @include sized(2, 1);
+
+        &:nth-child(23) {
+            @include sized(2, 3);
+            .bg {
+                picture,img {
+                    object-fit: contain;
+                }
+            }
         }
+
+        &:nth-child(24) {
+            @include sized(2, 3);
+        }
+     
         @include section("disrupt", #00bf5c);
         @include section("doritos", #fe3700);
         @include section("new-wheel", #9e191b);
@@ -72,13 +93,16 @@
         @include section("faces", #1c1c1e);
         @include section("betamaxmas", #4b1404);
         @include section("episogood", #d42134);
-        @include section("pins", #d42134);
-        @include section("social-cereal", #d42134);
+        @include section("pins", #ED6B5D);
+        @include section("social-cereal", #0066BC);
         @include section("paint-by-numbers", #ebcd57);
         @include section("sxsw-2008", #d42134);
         @include section("sxsw-2006", #d42134);
         @include section("evb", #6c265a);
         @include section("ignite", #eb4200);
         @include section("countdown", #008600);
+        @include section("killing-me-softly", #B14407);
+        @include section("point-of-view", #020000);
+        @include section("for-fern", #CB989D);
     }
 }

@@ -13,22 +13,17 @@ sublabel:
 {% endblock %}
 
 {% stylesheet 'scss' %}
-  $accent: #d42134;
+  $accent: #0066BC;
   @import 'global';
   @import 'details';
-  .box {
-    min-height: 350px;
-    &--image {
-      img {
-        object-position: top center;
+  .grid {
+    @include skinnyImages(2);
+    .box {
+      &--image {
+        img {
+          object-position: top center;
+        }
       }
-    }
-    &:nth-of-type(3) {
-      grid-area: 4/2/6/3;
-    }
-
-    &:nth-of-type(4) {
-      grid-area: 4/3/6/4;
     }
   }
 

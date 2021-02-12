@@ -1,11 +1,11 @@
 ---
 layout: default.liquid
-title: Media
+title: Projects
 ---
 
-<main class="grid grid--home">
+<main class="grid grid--media">
   {% for item in content %}
-     {% if (item.type == 'media') or (item.type == 'audio') %}
+    {% if item.type == 'media' %}
       {% set href = '/' + item.type +'/' + item.id %}
       
       {% if item.url %}
@@ -26,7 +26,8 @@ title: Media
         </div>
       </a>
     {% endif %}
-  {% endfor -%}
+  {% endfor %}    
+  
   
 </main>
 

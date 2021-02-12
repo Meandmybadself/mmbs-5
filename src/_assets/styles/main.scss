@@ -1,24 +1,13 @@
 @import 'normalize.css/normalize';
 @import 'variables';
 @import 'mixins';
-// @import 'global';
-
-img {
-  display: block;
-  width: 100%;
-}
 
 picture {
   display: block;
-  position: relative;
 
   > img {
     position: absolute;
   }
-}
-
-ul {
-  padding-left: 2rem;
 }
 
 a {

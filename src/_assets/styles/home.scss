@@ -1,7 +1,7 @@
 @import "mixins";
 
 .grid {
-    display:flex;
+    display: flex;
     flex-direction: column;
 
     @include med {
@@ -14,6 +14,10 @@
         grid-row-start: auto;
         @include sized();
         min-height: 250px;
+        margin-bottom: var(--gutter);
+        @include med {
+            margin-bottom: 0;
+        }
 
         .bg {
             @include absfill();
@@ -54,7 +58,6 @@
             @include sized(2, 1);
         }
 
-
         &:nth-child(15) {
             @include sized(2, 1);
         }
@@ -70,7 +73,8 @@
         &:nth-child(23) {
             @include sized(2, 3);
             .bg {
-                picture,img {
+                picture,
+                img {
                     object-fit: contain;
                 }
             }
@@ -79,7 +83,7 @@
         &:nth-child(24) {
             @include sized(2, 3);
         }
-     
+
         @include section("disrupt", #00bf5c);
         @include section("doritos", #fe3700);
         @include section("new-wheel", #9e191b);
@@ -93,16 +97,16 @@
         @include section("faces", #1c1c1e);
         @include section("betamaxmas", #4b1404);
         @include section("episogood", #d42134);
-        @include section("pins", #ED6B5D);
-        @include section("social-cereal", #0066BC);
+        @include section("pins", #ed6b5d);
+        @include section("social-cereal", #0066bc);
         @include section("paint-by-numbers", #ebcd57);
         @include section("sxsw-2008", #d42134);
         @include section("sxsw-2006", #d42134);
         @include section("evb", #6c265a);
         @include section("ignite", #eb4200);
         @include section("countdown", #008600);
-        @include section("killing-me-softly", #B14407);
+        @include section("killing-me-softly", #b14407);
         @include section("point-of-view", #020000);
-        @include section("for-fern", #CB989D);
+        @include section("for-fern", #cb989d);
     }
 }

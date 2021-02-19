@@ -23,6 +23,7 @@ module.exports = function (config) {
 
   config.addPassthroughCopy('src/_assets/**/*.mp3')
   config.addPassthroughCopy('src/_assets/811756')
+  config.addPassthroughCopy('src/_assets/resume.pdf')
 
   // Deep merge when combining the Data Cascade
   // Documentation: https://www.11ty.dev/docs/data-deep-merge/

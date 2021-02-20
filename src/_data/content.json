@@ -230,6 +230,19 @@
         "url": "https://youtu.be/rEA3N0QyvdE"
     },
     {
+        "id": "tshirt-machine",
+        "type": "projects",
+        "label": "T-Shirt Machine",
+        "sublabel": "The Shirt Show",
+        "images": [
+            "The keypad",
+            "The dials",
+            "Satisfied customer",
+            "The instructions",
+            "The cost"
+        ]
+    },
+    {
         "id": "for-fern",
         "type": "media",
         "label":"For Fern",

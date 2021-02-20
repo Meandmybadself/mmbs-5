@@ -71,7 +71,7 @@
         }
 
         &:nth-child(23) {
-            @include sized(2, 3);
+            @include sized(1, 3);
             .bg {
                 picture,
                 img {
@@ -82,6 +82,10 @@
 
         &:nth-child(24) {
             @include sized(2, 3);
+        }
+
+        &:nth-child(25) {
+            @include sized(1, 3);
         }
 
         @include section("disrupt", #00bf5c);
@@ -106,7 +110,8 @@
         @include section("ignite", #eb4200);
         @include section("countdown", #008600);
         @include section("killing-me-softly", #b14407);
-        @include section("point-of-view", #020000);
+        @include section("point-of-view", #000000);
         @include section("for-fern", #cb989d);
+        @include section("tshirt-machine", #583121);
     }
 }

@@ -5,7 +5,7 @@ module.exports = {
   dir: {
     // ⬇ Eleventy uses these
     input: 'src',
-    output: 'dist',
+    output: process.env.OUTPUT_DIR || 'dist',
     includes: '_includes',
     layouts: '_layouts',
     data: '_data',

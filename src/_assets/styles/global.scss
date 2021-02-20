@@ -29,6 +29,10 @@ html {
   background-color: var(--background);
 }
 
+a {
+  transition: border 0.3s ease-out;
+}
+
 * {
   -moz-osx-font-smoothing: grayscale;
 }
@@ -75,7 +79,7 @@ ul {
   margin: 10px auto;
   min-height: 100vh;
   transform-style: preserve-3d;
-  padding-bottom:300px;
+  padding-bottom:25px;
 }
 
 .grid {

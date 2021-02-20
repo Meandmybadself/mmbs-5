@@ -6,6 +6,7 @@
     "clean": "rimraf dist .twelvety.cache",
     "clear": "npm run clean",
     "build": "cross-env ELEVENTY_ENV=production eleventy",
+    "build:server": "cross-env ELEVENTY_ENV=production OUTPUT_DIR=stage eleventy",
     "watch": "cross-env ELEVENTY_ENV=development eleventy --watch",
     "serve": "cross-env ELEVENTY_ENV=development eleventy --serve",
     "dev": "npm run serve"

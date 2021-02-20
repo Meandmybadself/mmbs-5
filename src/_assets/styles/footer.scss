@@ -1,5 +1,23 @@
 footer {
-    font-family: "SF-Pro-Display", Roboto, Sans-Serif;
-    background-color: var(--content);
-    color: var(--background);
+    padding-bottom:100px;
+    margin:0 auto;
+    max-width: var(--grid-width);
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: "Ringside Condensed A", "Ringside Condensed B";
+        text-transform: uppercase;
+        margin: 0 10%;
+        li {
+            a {
+                color: var(--red);
+                text-decoration: none;
+                border-bottom: 1px solid rgba(255,255,255,0);
+                &:hover {
+                    border-color: var(--red);
+                }
+            }
+        }
+    }
 }

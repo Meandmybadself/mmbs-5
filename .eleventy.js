@@ -22,7 +22,7 @@ module.exports = function (config) {
   addShortcodes(config)
 
   config.addPassthroughCopy('src/_assets/**/*.mp3')
-  config.addPassthroughCopy('src/_assets/811756')
+  config.addPassthroughCopy('src/_assets/812294')
   config.addPassthroughCopy('src/_assets/resume.pdf')
 
   // Deep merge when combining the Data Cascade

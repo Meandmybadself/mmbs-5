@@ -1,6 +1,7 @@
 ---
 label: T-Shirt Machine
-sublabel:
+sublabel: The Shirt Show
+hasAttribution: true
 ---
 
 {% extends '../_layouts/details.njk' %}
@@ -8,6 +9,10 @@ sublabel:
 {% block description %}
     <p>The physical interface for the shirt maker consists of laser-cut and bent steel around a hand-built walnut wooden frame. The unit houses an <a href="https://www.arduino.cc/en/Guide/Introduction" target="_blank"><span>Arduino</span> <span>Mega</span></a> which interfaces with the 17 rotary encoders, 10 digit keypad and momentary push button. Die-cut vinyl decals adhered to the steel face provide a label to each control on the interface.</p>
     <p>The digital interface is a <a href="https://libcinder.org" target="_blank"><span>Cinder</span></a> application which communicates with the Arduino to change the design parameters on the screen and update the shirt preview. A Node-based web service handles initial user design submissions and automates submitting shirt orders with <a href="https://www.theprintful.com" target="_blank"><span>Printful</span></a>.</p>
+{% endblock %}
+
+{% block attribution %}
+  <p>Special thanks to Max Thorson &amp; Chris Moen for their assistance on this one.</p>
 {% endblock %}
 
 {% stylesheet 'scss' %}

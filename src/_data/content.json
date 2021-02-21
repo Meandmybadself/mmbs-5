@@ -162,6 +162,13 @@
 
     },
     {
+        "id": "todays-bestest",
+        "type": "projects",
+        "sublabel": "",
+        "label": "Today's Bestest",
+        "imageCount": 0
+    },
+    {
         "id": "episogood",
         "type": "projects",
         "sublabel": "",
@@ -218,7 +225,7 @@
     },
     {
         "id": "killing-me-softly",
-        "type": "sounds",
+        "type": "media",
         "label": "Killing Me Softly (no times mix)",
         "sublabel": ""
     },

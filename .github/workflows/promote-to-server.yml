@@ -27,6 +27,4 @@ jobs:
             rm -rf node_modules
             nvm use
             npm i --silent
-            npm run build:server
-            rm -rf dist
-            mv stage dist
+            npm run build:server && rm -rf dist && mv stage dist

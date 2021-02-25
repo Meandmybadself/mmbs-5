@@ -102,6 +102,18 @@
         ]
     },
     {
+        "id": "select-stylist",
+        "type": "work",
+        "sublabel": "",
+        "label": "Select Stylist",
+        "images": [
+            "Initial screen",
+            "Survey",
+            "Results",
+            "Details"
+        ]
+    },
+    {
         "id": "pins",
         "type": "projects",
         "sublabel": "",

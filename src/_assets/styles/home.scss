@@ -58,7 +58,7 @@
             @include sized(2, 1);
         }
 
-        &:nth-child(15) {
+        &--episogood {
             @include sized(2, 1);
         }
 
@@ -66,18 +66,8 @@
             @include sized(2, 2);
         }
 
-        &:nth-child(19) {
+        &--countdown {
             @include sized(2, 2);
-        }
-
-        &:nth-child(23) {
-            @include sized(1, 1);
-            .bg {
-                picture,
-                img {
-                    object-fit: contain;
-                }
-            }
         }
 
         &--episogood {
@@ -116,5 +106,6 @@
         @include section("for-fern", #cb989d);
         @include section("tshirt-machine", #583121);
         @include section("todays-bestest", #00CAE7);
+        @include section("select-stylist", #FF5857);
     }
 }

@@ -1,9 +1,6 @@
 @import url(https://cloud.typography.com/6984932/6762612/css/fonts.css);
-
 @import "nav";
 @import "mixins";
-
-
 
 :root {
   --red: #cc0000;
@@ -83,14 +80,17 @@ ul {
 }
 
 .grid {
-  display: grid;
-  grid-gap: var(--gutter);
+
+  display: flex;
+  flex-direction:column;
   transform-style: preserve-3d;
   grid-auto-flow: dense;
   grid-template-rows: none;
   grid-auto-rows: minmax(100px, auto);
 
   @include med {
+    display: grid;
+    grid-gap: var(--gutter);
     grid-template-columns: repeat(2, 1fr);
   }
 

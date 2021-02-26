@@ -32,38 +32,34 @@
             }
         }
 
-        &:nth-child(1) {
+        &--text-a-target {
             @include sized(2, 2);
         }
-        &:nth-child(2) {
+        &--studio-connect {
             @include sized(2, 1);
         }
 
-        &:nth-child(6) {
+        &--doritos {
             @include sized(2, 1);
         }
 
-        &:nth-child(10) {
+        &--select-stylist {
             @include sized(2, 1);
         }
 
-        &:nth-child(11) {
-            @include sized(2, 1);
+        &--air-jordan-30 {
+            @include sized(1,1);
         }
 
-        &:nth-child(12) {
-            @include sized(2, 2);
-        }
-        &:nth-child(13) {
+        &--paint-by-numbers {
             @include sized(2, 1);
         }
-
-        &--episogood {
-            @include sized(2, 1);
+        &--ignite {
+            @include sized(1,2);
         }
 
-        &:nth-child(16) {
-            @include sized(2, 2);
+        &--faces {
+            @include sized(2,1);
         }
 
         &--countdown {
@@ -78,7 +74,9 @@
             @include sized(2,1);
         }
 
-    
+        &--for-fern {
+            @include sized(2,1);
+        }
 
         @include section("disrupt", #00bf5c);
         @include section("doritos", #fe3700);

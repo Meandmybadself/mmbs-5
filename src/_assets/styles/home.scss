@@ -1,13 +1,6 @@
 @import "mixins";
 
-.grid {
-    display: flex;
-    flex-direction: column;
-
-    @include med {
-        display: grid;
-    }
-
+main.grid.grid--home {
     .box {
         cursor: pointer;
         grid-column-start: auto;
@@ -75,6 +68,7 @@
         }
 
         &--for-fern {
+            border:2px solid green;
             @include sized(2,1);
         }
 

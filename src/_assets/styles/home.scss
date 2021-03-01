@@ -41,18 +41,18 @@ main.grid.grid--home {
         }
 
         &--air-jordan-30 {
-            @include sized(1,1);
+            @include sized(1, 1);
         }
 
         &--paint-by-numbers {
             @include sized(2, 1);
         }
         &--ignite {
-            @include sized(1,2);
+            @include sized(1, 2);
         }
 
         &--faces {
-            @include sized(2,1);
+            @include sized(2, 1);
         }
 
         &--countdown {
@@ -60,16 +60,15 @@ main.grid.grid--home {
         }
 
         &--episogood {
-            @include sized(2,2);
+            @include sized(2, 2);
         }
 
         &--tshirt-machine {
-            @include sized(2,1);
+            @include sized(2, 1);
         }
 
         &--for-fern {
-            border:2px solid green;
-            @include sized(2,1);
+            @include sized(2, 1);
         }
 
         @include section("disrupt", #00bf5c);
@@ -97,7 +96,7 @@ main.grid.grid--home {
         @include section("point-of-view", #000000);
         @include section("for-fern", #cb989d);
         @include section("tshirt-machine", #583121);
-        @include section("todays-bestest", #00CAE7);
-        @include section("select-stylist", #FF5857);
+        @include section("todays-bestest", #00cae7);
+        @include section("select-stylist", #ff5857);
     }
 }

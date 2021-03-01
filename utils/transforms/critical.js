@@ -11,7 +11,7 @@ module.exports = async function(content, outputPath) {
       html: content,
       minify: false,
       width: 2560,
-      height: 1600
+      height: 4000
     })
 
     // Append critical styles to head using JSDOM

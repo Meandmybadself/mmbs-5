@@ -32,6 +32,10 @@ main.grid.grid--home {
             @include sized(2, 1);
         }
 
+        &--bra-telemetry {
+            @include sized(2, 1);
+        }
+
         &--doritos {
             @include sized(2, 1);
         }
@@ -68,7 +72,7 @@ main.grid.grid--home {
         }
 
         &--for-fern {
-            @include sized(2, 1);
+            @include sized(1, 1);
         }
 
         @include section("disrupt", #00bf5c);

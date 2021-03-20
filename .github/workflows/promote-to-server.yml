@@ -15,7 +15,7 @@ jobs:
 
     steps:
       - uses: appleboy/ssh-action@master
-        timeout-minutes: 30
+        timeout-minutes: 60
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}

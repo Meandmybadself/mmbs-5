@@ -52,6 +52,10 @@ main.grid.grid--home {
       @include sized(1, 1);
     }
 
+    &--evb {
+      @include sized(2, 1);
+    }
+
     &--paint-by-numbers {
       @include sized(2, 1);
     }

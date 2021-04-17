@@ -19,16 +19,6 @@
     ]
   },
   {
-    "id": "studio-connect",
-    "type": "work",
-    "sublabel": "Target",
-    "label": "Studio Connect",
-    "images": [
-      "Explore Screen",
-      "Post List"
-    ]
-  },
-  {
     "id": "bra-telemetry",
     "type": "work",
     "sublabel": "Target",
@@ -37,6 +27,16 @@
       "Prototype (closed)",
       "Prototype (open)",
       "Sample measurements"
+    ]
+  },
+  {
+    "id": "studio-connect",
+    "type": "work",
+    "sublabel": "Target",
+    "label": "Studio Connect",
+    "images": [
+      "Explore Screen",
+      "Post List"
     ]
   },
   {

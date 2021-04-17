@@ -1,0 +1,23 @@
+---
+label: Spelly
+sublabel:
+---
+
+{% extends '../_layouts/details.njk' %}
+
+{% block description %}
+  <p>The social layer of podcast is broken because the podcatcher market is incredibly fragmented.</p>
+  <p>Episogood provides a compatibility layer for podcatchers, allowing friends to share episodes with friends agnostic of podcatcher choice.</p>
+  <p>Join today at <a href='https://episogood.com'>Episogood</a>
+  </p>
+{% endblock %}
+
+{% stylesheet 'scss' %}
+
+  $accent: #d42134;
+
+  @import 'global';
+  @import 'mixins';
+  @import 'details';
+
+{% endstylesheet %}

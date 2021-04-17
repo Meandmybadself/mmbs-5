@@ -1,271 +1,279 @@
 [
-    {
-        "id": "text-a-target",
-        "type": "work",
-        "sublabel": "Target",
-        "label": "Text a Target",
-        "images": [
-            "In-store CTA",
-            "Sample convo"
-        ]
-    },
-    {
-        "id": "studio-connect",
-        "type": "work",
-        "sublabel": "Target",
-        "label": "Studio Connect",
-        "images": [
-            "Explore Screen",
-            "Post List"
-        ]
-    },
-    {
-        "id": "bra-telemetry",
-        "type": "work",
-        "sublabel": "Target",
-        "label": "Bra Telemetry",
-        "images": [
-            "Prototype (closed)" ,
-            "Prototype (open)",
-            "Sample measurements"
-        ]
-    },
-    {
-        "id": "doll-creator",
-        "type": "work",
-        "sublabel": "Manhattan Toy Co.",
-        "label": "Doll Creator",
-        "images": [
-            "Step 1",
-            "Step 2",
-            "Step 3"
-        ]
-    },
-    {
-        "id": "new-wheel",
-        "type": "work",
-        "label": "Flagship Website",
-        "sublabel": "The New Wheel",
-        "images": [
-            "Homepage",
-            "Bike Selection",
-            "Collapsible Header"
-        ]
-    },
-    {
-        "id": "doritos",
-        "type": "work",
-        "sublabel": "Doritos",
-        "label": "Blink-182 / Big Boi AR Experience",
-        "images": [
-            "Blink 182",
-            "Packaging",
-            "Big Boi",
-            "Filming"
-        ]
-    },
-    {
-        "id": "disrupt",
-        "type": "work",
-        "sublabel": "TechCrunch",
-        "label": "Disrupt",
-        "images": [
-            "View from the podium",
-            "Deliberation",
-            "Team jacket",
-            "TechCrunch.com",
-            "Family business",
-            "Main stage"
-        ]
-    },
-    {
-        "id": "air-jordan-30",
-        "type": "work",
-        "sublabel": "Nike",
-        "label": "Air Jordan 30th",
-        "images": [
-            "Screens 1",
-            "Screens 2"
-        ]
-    },
-    {
-        "id": "live-in-levis",
-        "type": "work",
-        "sublabel": "Levi's",
-        "label": "Eureka Innovation Lab",
-        "images": [
-            "Main Floor Hotspots",
-            "Tailor Shop",
-            "Cutting Board",
-            "Dye Room",
-            "Explore Details"
-        ]
-    },
-    {
-        "id": "select-stylist",
-        "type": "work",
-        "sublabel": "",
-        "label": "Select Stylist",
-        "images": [
-            "Initial screen",
-            "Survey",
-            "Results",
-            "Details"
-        ]
-    },
-    {
-        "id": "pins",
-        "type": "projects",
-        "sublabel": "",
-        "label": "Pins",
-        "imageCount": 12
-    },
-    {
-        "id": "paint-by-numbers",
-        "type": "projects",
-        "sublabel": "",
-        "label": "Paint-by-Numbers",
-        "images": [
-            "Die Hard",
-            "Christmas Vacation",
-            "Reservoir Dogs",
-            "Robocop",
-            "Royal Tenenbaums",
-            "2014 Christmas Card"
-        ]
-    },
-    {
-        "id": "social-cereal",
-        "type": "projects",
-        "sublabel": "",
-        "label": "Social Cereal",
-        "images": [
-            "Latest Tweets",
-            "Cereal Breakdown"
-        ]
-    },
-    {
-        "id": "betamaxmas",
-        "type": "projects",
-        "sublabel": "",
-        "label": "BetamaXmas",
-        "images": [
-            "The Onion",
-            "Vulture",
-            "USA Today"
-        ]
-    },
-    {
-        "id": "minnecrapolis",
-        "type": "projects",
-        "sublabel": "",
-        "label": "Minnecrapolis",
-        "images": [
-            "Listening Party",
-            "Live"
-        ]
-    },
-    {
-        "id": "faces",
-        "type": "projects",
-        "sublabel": "",
-        "label": "Faces",
-        "imageCount": 8
-
-    },
-    {
-        "id": "todays-bestest",
-        "type": "projects",
-        "sublabel": "",
-        "label": "Today's Bestest",
-        "imageCount": 0
-    },
-    {
-        "id": "episogood",
-        "type": "projects",
-        "sublabel": "",
-        "label": "Episogood",
-        "images": [
-            "Main screen",
-            "How-to"
-        ]
-    },
-    {
-        "id": "countdown",
-        "type": "projects",
-        "sublabel": "",
-        "label": "Inauguration Countdown",
-        "images": [
-            "Diffusing",
-            "LEDs",
-            "Segment Plan",
-            "The Face",
-            "49",
-            "Styrofoam Padding",
-            "Wiring Sketch",
-            "Test Lighting",
-            "The Shot"
-        ]
-    },
-    {
-        "id": "ignite",
-        "type": "media",
-        "sublabel": "Ignite",
-        "label": "The Tale of Two Domain-crossed Lovers",
-        "url": "https://www.youtube.com/watch?v=Kd-TFFyzqfI"
-    },
-    {
-        "id": "evb",
-        "type": "media",
-        "sublabel": "EVB",
-        "label": "Halloween", 
-        "url": "https://www.youtube.com/watch?v=eIlACvVXFj0"
-    },
-    {
-        "id": "sxsw-2008",
-        "type": "media",
-        "sublabel": "SxSW",
-        "label": "Worst Website 2008", 
-        "url": "https://www.youtube.com/watch?v=xUWJnn1-FSk"
-    },
-    {
-        "id": "sxsw-2006",
-        "type": "media",
-        "sublabel": "SxSW",
-        "label": "Worst Website 2006", 
-        "url": "https://vimeo.com/819738"
-    },
-    {
-        "id": "killing-me-softly",
-        "type": "media",
-        "label": "Killing Me Softly (no times mix)",
-        "sublabel": ""
-    },
-    {
-        "id": "point-of-view",
-        "type": "media",
-        "label": "Point of View",
-        "sublabel":"",
-        "url": "https://youtu.be/rEA3N0QyvdE"
-    },
-    {
-        "id": "tshirt-machine",
-        "type": "projects",
-        "label": "T-Shirt Machine",
-        "sublabel": "The Shirt Show",
-        "images": [
-            "The keypad",
-            "The dials",
-            "Satisfied customer",
-            "The instructions",
-            "The cost"
-        ]
-    },
-    {
-        "id": "for-fern",
-        "type": "media",
-        "label":"For Fern",
-        "sublabel": "",
-        "url": "https://www.youtube.com/watch?v=Q9o0hE2oI0o"
-    }
+  {
+    "id": "spelly",
+    "type": "projects",
+    "sublabel": "",
+    "label": "Spelly",
+    "images": [
+      "Exemplary Usage"
+    ]
+  },
+  {
+    "id": "text-a-target",
+    "type": "work",
+    "sublabel": "Target",
+    "label": "Text a Target",
+    "images": [
+      "In-store CTA",
+      "Sample convo"
+    ]
+  },
+  {
+    "id": "studio-connect",
+    "type": "work",
+    "sublabel": "Target",
+    "label": "Studio Connect",
+    "images": [
+      "Explore Screen",
+      "Post List"
+    ]
+  },
+  {
+    "id": "bra-telemetry",
+    "type": "work",
+    "sublabel": "Target",
+    "label": "Bra Telemetry",
+    "images": [
+      "Prototype (closed)",
+      "Prototype (open)",
+      "Sample measurements"
+    ]
+  },
+  {
+    "id": "doll-creator",
+    "type": "work",
+    "sublabel": "Manhattan Toy Co.",
+    "label": "Doll Creator",
+    "images": [
+      "Step 1",
+      "Step 2",
+      "Step 3"
+    ]
+  },
+  {
+    "id": "new-wheel",
+    "type": "work",
+    "label": "Flagship Website",
+    "sublabel": "The New Wheel",
+    "images": [
+      "Homepage",
+      "Bike Selection",
+      "Collapsible Header"
+    ]
+  },
+  {
+    "id": "doritos",
+    "type": "work",
+    "sublabel": "Doritos",
+    "label": "Blink-182 / Big Boi AR Experience",
+    "images": [
+      "Blink 182",
+      "Packaging",
+      "Big Boi",
+      "Filming"
+    ]
+  },
+  {
+    "id": "disrupt",
+    "type": "work",
+    "sublabel": "TechCrunch",
+    "label": "Disrupt",
+    "images": [
+      "View from the podium",
+      "Deliberation",
+      "Team jacket",
+      "TechCrunch.com",
+      "Family business",
+      "Main stage"
+    ]
+  },
+  {
+    "id": "air-jordan-30",
+    "type": "work",
+    "sublabel": "Nike",
+    "label": "Air Jordan 30th",
+    "images": [
+      "Screens 1",
+      "Screens 2"
+    ]
+  },
+  {
+    "id": "live-in-levis",
+    "type": "work",
+    "sublabel": "Levi's",
+    "label": "Eureka Innovation Lab",
+    "images": [
+      "Main Floor Hotspots",
+      "Tailor Shop",
+      "Cutting Board",
+      "Dye Room",
+      "Explore Details"
+    ]
+  },
+  {
+    "id": "select-stylist",
+    "type": "work",
+    "sublabel": "",
+    "label": "Select Stylist",
+    "images": [
+      "Initial screen",
+      "Survey",
+      "Results",
+      "Details"
+    ]
+  },
+  {
+    "id": "pins",
+    "type": "projects",
+    "sublabel": "",
+    "label": "Pins",
+    "imageCount": 12
+  },
+  {
+    "id": "paint-by-numbers",
+    "type": "projects",
+    "sublabel": "",
+    "label": "Paint-by-Numbers",
+    "images": [
+      "Die Hard",
+      "Christmas Vacation",
+      "Reservoir Dogs",
+      "Robocop",
+      "Royal Tenenbaums",
+      "2014 Christmas Card"
+    ]
+  },
+  {
+    "id": "social-cereal",
+    "type": "projects",
+    "sublabel": "",
+    "label": "Social Cereal",
+    "images": [
+      "Latest Tweets",
+      "Cereal Breakdown"
+    ]
+  },
+  {
+    "id": "betamaxmas",
+    "type": "projects",
+    "sublabel": "",
+    "label": "BetamaXmas",
+    "images": [
+      "The Onion",
+      "Vulture",
+      "USA Today"
+    ]
+  },
+  {
+    "id": "minnecrapolis",
+    "type": "projects",
+    "sublabel": "",
+    "label": "Minnecrapolis",
+    "images": [
+      "Listening Party",
+      "Live"
+    ]
+  },
+  {
+    "id": "faces",
+    "type": "projects",
+    "sublabel": "",
+    "label": "Faces",
+    "imageCount": 8
+  },
+  {
+    "id": "todays-bestest",
+    "type": "projects",
+    "sublabel": "",
+    "label": "Today's Bestest",
+    "imageCount": 0
+  },
+  {
+    "id": "episogood",
+    "type": "projects",
+    "sublabel": "",
+    "label": "Episogood",
+    "images": [
+      "Main screen",
+      "How-to"
+    ]
+  },
+  {
+    "id": "countdown",
+    "type": "projects",
+    "sublabel": "",
+    "label": "Inauguration Countdown",
+    "images": [
+      "Diffusing",
+      "LEDs",
+      "Segment Plan",
+      "The Face",
+      "49",
+      "Styrofoam Padding",
+      "Wiring Sketch",
+      "Test Lighting",
+      "The Shot"
+    ]
+  },
+  {
+    "id": "ignite",
+    "type": "media",
+    "sublabel": "Ignite",
+    "label": "The Tale of Two Domain-crossed Lovers",
+    "url": "https://www.youtube.com/watch?v=Kd-TFFyzqfI"
+  },
+  {
+    "id": "evb",
+    "type": "media",
+    "sublabel": "EVB",
+    "label": "Halloween",
+    "url": "https://www.youtube.com/watch?v=eIlACvVXFj0"
+  },
+  {
+    "id": "sxsw-2008",
+    "type": "media",
+    "sublabel": "SxSW",
+    "label": "Worst Website 2008",
+    "url": "https://www.youtube.com/watch?v=xUWJnn1-FSk"
+  },
+  {
+    "id": "sxsw-2006",
+    "type": "media",
+    "sublabel": "SxSW",
+    "label": "Worst Website 2006",
+    "url": "https://vimeo.com/819738"
+  },
+  {
+    "id": "killing-me-softly",
+    "type": "media",
+    "label": "Killing Me Softly (no times mix)",
+    "sublabel": ""
+  },
+  {
+    "id": "point-of-view",
+    "type": "media",
+    "label": "Point of View",
+    "sublabel": "",
+    "url": "https://youtu.be/rEA3N0QyvdE"
+  },
+  {
+    "id": "tshirt-machine",
+    "type": "projects",
+    "label": "T-Shirt Machine",
+    "sublabel": "The Shirt Show",
+    "images": [
+      "The keypad",
+      "The dials",
+      "Satisfied customer",
+      "The instructions",
+      "The cost"
+    ]
+  },
+  {
+    "id": "for-fern",
+    "type": "media",
+    "label": "For Fern",
+    "sublabel": "",
+    "url": "https://www.youtube.com/watch?v=Q9o0hE2oI0o"
+  }
 ]

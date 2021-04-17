@@ -1,0 +1,25 @@
+---
+label: Spelly
+sublabel:
+---
+
+{% extends '../_layouts/details.njk' %}
+
+{% block description %}
+  <p>Spelly is a simple way for kids to play around with letters and test their spelling skills.</p>
+  <p>It was built primarily to teach my children how to spell filthy words.</p>
+  <p>Get your spell on at <a href='https://spelly.fun'>spelly.fun</a>
+  </p>
+{% endblock %}
+
+{% stylesheet 'scss' %}
+
+  $accent: #FF0066;
+
+  @import 'global';
+  @import 'mixins';
+  @import 'details';
+
+  @include lastImageCentered();
+
+{% endstylesheet %}

@@ -9,7 +9,8 @@
     "build:server": "cross-env ELEVENTY_ENV=production OUTPUT_DIR=stage eleventy",
     "watch": "cross-env ELEVENTY_ENV=development eleventy --watch",
     "serve": "cross-env ELEVENTY_ENV=development eleventy --serve",
-    "dev": "npm run serve"
+    "dev": "npm run serve",
+    "promote": "ssh mn 'cd /var/www/static-sites/meandmybadself.com && npm run build:server && rm -rf dist && mv stage dist && cp -R src/_assets/ dist/_assets/"
   },
   "repository": "https://github.com/meandmybadself/mmbs-5",
   "author": "Jeffery Bennett",

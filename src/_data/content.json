@@ -127,7 +127,7 @@
     "type": "projects",
     "sublabel": "",
     "label": "Pins",
-    "imageCount": 12
+    "imageCount": 13
   },
   {
     "id": "paint-by-numbers",
@@ -171,8 +171,9 @@
     "sublabel": "",
     "label": "Minnecrapolis",
     "images": [
-      "Listening Party",
-      "Live"
+      "Fall Listening Party",
+      "Live",
+      "Spring Listening Party"
     ]
   },
   {

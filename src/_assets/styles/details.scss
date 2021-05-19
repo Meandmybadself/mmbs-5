@@ -1,100 +1,96 @@
-@import 'mixins';
+@import "mixins";
 
 .grid {
-    @include masthead();
-    @include text();
-    @include wideImages();
-    display: block;
+  @include masthead();
+  @include text();
+  @include wideImages();
+  display: block;
 
-    .accent {
-        color: $accent;
-    }
-    
-    
+  .accent {
+    color: $accent;
+  }
+
+  @include med {
+    display: grid;
+  }
+
+  .box {
+    margin-bottom: var(--gutter);
     @include med {
-        display: grid;
+      margin-bottom: none;
+    }
+    a {
+      color: $accent;
+    }
+    .fg {
+      .placard {
+        h1,
+        h2 {
+          color: $accent;
+        }
+      }
     }
 
+    &.box--link {
+      display: none;
+
+      @include med {
+        display: flex;
+      }
+      font-family: "Ringside Condensed A", "Ringside Condensed B";
+      font-weight: 400;
+      align-items: flex-start;
+      justify-content: flex-start;
+      text-transform: uppercase;
+      grid-column: span 1;
+      span {
+        margin-right: 5px;
+        color: var(--content);
+      }
+      a {
+        text-decoration: none;
+        color: $accent;
+        border-bottom: 1px solid rgba(255, 255, 255, 0);
+        transition: border 0.3s ease-out;
+        &:hover {
+          border-color: $accent;
+        }
+      }
+      &.box--next {
+        justify-content: flex-end;
+      }
+    }
+
+    &.box--image {
+      pointer-events: none;
+      min-height: 400px;
+      &:nth-child(even) {
+        @include placard-right();
+      }
+      &:nth-child(odd) {
+        @include placard-left();
+      }
+    }
+  }
+
+  &.grid--2x {
+    // Doubles the height of the
+    @include masthead(2);
+    @include wideImages(2);
+  }
+
+  &.grid--attribution {
     .box {
-        margin-bottom: var(--gutter);
-        @include med {
-            margin-bottom: none;
-        }
-        a {
-            color: $accent;
-        }
-        .fg {
-            .placard {
-                h1, h2 {
-                    color: $accent;
-                }
-            } 
-        }
-        
-        &.box--link {
-            display:none;
-
-            @include med {
-                display: flex;
-            }
-            font-family: "Ringside Condensed A", "Ringside Condensed B";
-            font-weight: 400;
-            align-items: flex-start;
-            justify-content: flex-start;
-            text-transform: uppercase;
-            grid-column: span 1;
-            span {
-                margin-right: 5px;
-                color: var(--content);
-            }
-            a {
-                text-decoration: none;
-                color: $accent;
-                border-bottom: 1px solid rgba(255,255,255,0);
-                transition: border 0.3s ease-out;
-                &:hover {
-                    border-color: $accent;
-                } 
-            }
-            &.box--next {
-                justify-content: flex-end;
-            }
-        }
-
-       
-        &.box--image {
-            min-height: 400px;
-            &:nth-child(even) {
-                @include placard-right();
-            }
-            &:nth-child(odd) {
-                @include placard-left();
-            }
-        }
-
-        
-        
+      &:nth-child(odd):not(.box--masthead) {
+        @include placard-left();
+      }
+      &:nth-child(even):not(.box--masthead) {
+        @include placard-right();
+      }
+      &.box--text.box--attribution {
+        @include placard-right();
+        @include placard-top();
+      }
     }
-
-     &.grid--2x {
-        // Doubles the height of the 
-        @include masthead(2);
-        @include wideImages(2);
-    }
-
-    &.grid--attribution {
-        .box {
-            &:nth-child(odd):not(.box--masthead) {
-                @include placard-left();
-            }
-            &:nth-child(even):not(.box--masthead) {
-                @include placard-right();
-            }
-            &.box--text.box--attribution {
-                @include placard-right();
-                @include placard-top();
-            }
-        }
-        
-    }
+  }
 }

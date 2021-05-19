@@ -1,23 +1,23 @@
 ---
 label: Minnecrapolis
-sublabel: 
+sublabel:
 hasAttribution: true
 ---
 
 {% extends '../_layouts/details.njk' %}
 
 {% block description %}
-    <p>
+  <p>
           I spun up a small email listserv amongst friends in 2013. Since then, it has organically blossomed into a Slack community with
           over 400 people, <a href='https://live.minnecrapol.is'>its own internet radio station</a> & a tool-lending network.
         </p>
-        <p>
+  <p>
           We&rsquo;ve sent 475,000 messages with an average of 90 members active every day & has been a necessary part of my sanity in times
           of pandemic.
         </p>
-        <p>
+  <p>
           Join today at <a href="https://minnecrapol.is">https://minnecrapol.is</a>
-        </p>
+  </p>
 
 {% endblock %}
 
@@ -29,6 +29,7 @@ hasAttribution: true
 {% stylesheet 'scss' %}
   $accent: #8d5e28;
   @import 'global';
+  @import 'mixins';
   @import 'details';
   .box {
     a {
@@ -37,7 +38,13 @@ hasAttribution: true
   }
   .box--image {
     .bg img,picture {
-        object-size: contain; 
+      object-size: contain;
+    }
+    @include med {
+      &:nth-child(8) {
+        grid-column: 1 / span 4 !important;
       }
+    }
+
   }
 {% endstylesheet %}

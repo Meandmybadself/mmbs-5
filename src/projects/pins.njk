@@ -1,13 +1,13 @@
 ---
 label: Pins
-sublabel: 
+sublabel:
 ---
 
 {% extends '../_layouts/details.njk' %}
 
 {% block description %}
-    <p>I&rsquo;ve wanted a pin-making machine since I was in junior high. Turns out, they&rsquo;re relatively inexpensive.</p>
-    <p>Owning a pin maker provides a great opportunity to make super-ephemeral statements.</p>
+  <p>I&rsquo;ve wanted a pin-making machine since I was in junior high. Turns out, they&rsquo;re relatively inexpensive.</p>
+  <p>Owning a pin maker provides a great opportunity to make super-ephemeral statements.</p>
 {% endblock %}
 
 {% stylesheet 'scss' %}
@@ -15,10 +15,20 @@ sublabel:
   @import 'global';
   @import 'mixins';
   @import 'details';
-  
+
   .grid.grid--pins.grid--details {
     display: grid;
 
     @include fourImages();
+
+    @include med {
+      .box.box--image {
+        &:nth-child(12) {
+          grid-column: span 2 !important;
+          grid-row: span 2 !important;
+        }
+      }
+    }
+
   }
 {% endstylesheet %}

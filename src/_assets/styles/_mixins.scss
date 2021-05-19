@@ -1,32 +1,32 @@
-@import 'variables';
+@import "variables";
 
 @mixin absfill {
   position: absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 $margin-big: 12.5%;
 $margin-sm: -2.5%;
 
 @mixin placard-left {
- .fg {
+  .fg {
     flex-direction: row;
     justify-content: flex-start;
     margin-left: $margin-big;
     @include med {
-        margin-left: $margin-sm;
+      margin-left: $margin-sm;
     }
   }
 }
 
 @mixin placard-top {
-   .fg {
-     flex-direction: row;
-     align-items: flex-start;
-   }
+  .fg {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
 
 @mixin placard-right {
@@ -35,7 +35,7 @@ $margin-sm: -2.5%;
     justify-content: flex-end;
     margin-right: $margin-big;
     @include med {
-        margin-right: $margin-sm;
+      margin-right: $margin-sm;
     }
   }
 }
@@ -90,7 +90,8 @@ $margin-sm: -2.5%;
 
 @mixin topAlignImage {
   .bg {
-    picture, img {
+    picture,
+    img {
       object-position: center top;
     }
   }
@@ -98,14 +99,15 @@ $margin-sm: -2.5%;
 
 @mixin topContainImage {
   .box--image {
-    .bg picture, img {
+    .bg picture,
+    img {
       object-position: top;
       object-fit: contain;
     }
   }
 }
 
-@mixin masthead ($span: 1) {
+@mixin masthead($span: 1) {
   .box.box--masthead {
     @include full();
     grid-row: span $span;
@@ -116,7 +118,7 @@ $margin-sm: -2.5%;
   }
 }
 
-@mixin text ($span: 1) {
+@mixin text($span: 1) {
   .box.box--text {
     @include center;
     grid-row: span $span;
@@ -129,7 +131,7 @@ $margin-sm: -2.5%;
   }
 }
 
-@mixin skinnyImages ($span: 1) {
+@mixin skinnyImages($span: 1) {
   @include med {
     .box.box--image {
       &:nth-child(odd) {
@@ -144,7 +146,7 @@ $margin-sm: -2.5%;
   }
 }
 
-@mixin wideImages ($span: 1) {
+@mixin wideImages($span: 1) {
   @include med {
     .box.box--image {
       grid-row: span $span;
@@ -158,10 +160,13 @@ $margin-sm: -2.5%;
   }
 }
 
-@mixin fourImages ($span: 1) {
+// Four images across
+@mixin fourImages($span: 1) {
   @include med {
     .box.box--image {
-      &:nth-child(odd), &:nth-child(even) { // this is to override the base column span.
+      &:nth-child(odd),
+      &:nth-child(even) {
+        // this is to override the base column span.
         grid-column: span 1;
         min-height: 200px;
       }
@@ -170,11 +175,11 @@ $margin-sm: -2.5%;
   }
 }
 
-@mixin lastImageCentered ($span: 1) {
-    .box.box--image:last-child {
-      &:nth-child(odd), &:nth-child(even) {
-          @include center($span);
-      }
+@mixin lastImageCentered($span: 1) {
+  .box.box--image:last-child {
+    &:nth-child(odd),
+    &:nth-child(even) {
+      @include center($span);
     }
+  }
 }
-

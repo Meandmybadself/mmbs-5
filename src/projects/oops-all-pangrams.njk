@@ -1,0 +1,33 @@
+---
+label: Oops! All Pangrams
+sublabel:
+hasAttribution: false
+---
+
+{% extends '../_layouts/details.njk' %}
+
+{% block description %}
+  <p>This project started off as a tweet:<br/>
+    <a href='https://twitter.com/meandmybadself/status/1437758991283724294'>https://twitter.com/meandmybadself/status/1437758991283724294</a>
+  </p>
+  <p>My wife &amp; I play <a href='https://www.nytimes.com/puzzles/spelling-bee'>NYTimes' Spelling Bee</a> daily, but by different rules.  She's always played by the rules as dictated by <i>The New York Times</i>, and I simply look for pangrams.</p>
+  <p>To scratch this daily itch, I made a modification of the game where the sole objective is to find pangrams.</p>
+  <p>Play today at <a href="https://oops.allpangrams.com">https://oops.allpangrams.com</a>
+  </p>
+
+{% endblock %}
+
+{% stylesheet 'scss' %}
+  $accent: #07C0F7;
+  @import 'global';
+  @import 'mixins';
+  @import 'details';
+
+  .grid.grid--details {
+    .box.box--masthead {
+      min-height: 575px;
+    }
+    @include skinnyImages(2);
+  }
+
+{% endstylesheet %}

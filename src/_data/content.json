@@ -1,5 +1,12 @@
 [
   {
+    "id": "oops-all-pangrams",
+    "type": "projects",
+    "sublabel": "",
+    "label": "Oops, All Pangrams",
+    "imageCount": 4
+  },
+  {
     "id": "spelly",
     "type": "projects",
     "sublabel": "",

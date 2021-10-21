@@ -32,11 +32,11 @@ sublabel:
   @import 'global';
   @import 'mixins';
   @import 'details';
+  @include lastImageCentered();
 
   .box {
     min-height:350px;
     @include topAlignImage();
-    @include lastImageCentered();
 
     &:nth-child(4) {
       img,picture {

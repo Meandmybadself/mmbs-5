@@ -176,7 +176,7 @@ $margin-sm: -2.5%;
 }
 
 @mixin lastImageCentered($span: 1) {
-  .box.box--image:last-child {
+  .box.box--image:last-of-type {
     &:nth-child(odd),
     &:nth-child(even) {
       @include center($span);

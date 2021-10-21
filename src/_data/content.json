@@ -26,6 +26,17 @@
     ]
   },
   {
+    "id": "pawnee",
+    "type": "projects",
+    "sublabel": "City of Pawnee",
+    "label": "Employee Directory",
+    "images": [
+      "All the Gergiches",
+      "Ron who?",
+      "Admin"
+    ]
+  },
+  {
     "id": "bra-telemetry",
     "type": "work",
     "sublabel": "Target",

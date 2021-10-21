@@ -1,13 +1,15 @@
 ---
 label: BetamaXmas
-sublabel: 
+sublabel:
 ---
 
 {% extends '../_layouts/details.njk' %}
 
 {% block description %}
   <p>Betamaxmas lets you watch holiday television from the 1980&rsquo;s in the basement. The site stemmed from an idea of
-    <i><b>"what if Tivo could provide VoD going back into the 80&rsquo;s?"</b></i>.
+    <i>
+      <b>"what if Tivo could provide VoD going back into the 80&rsquo;s?"</b>
+    </i>.
   </p>
   <p>I built it in 2005 using Flash & PHP, because that&rsquo;s what people used to build websites with in ancient times.</p>
   <p>In 2013, it got a facelift to responsive HTML and JavaScript. Betamaxmas was featured by:</p>
@@ -26,7 +28,7 @@ sublabel:
 
 {% stylesheet 'scss' %}
 
-  $accent: #4b1404;
+  $accent: #8b1404;
   @import 'global';
   @import 'mixins';
   @import 'details';
@@ -35,7 +37,7 @@ sublabel:
     min-height:350px;
     @include topAlignImage();
     @include lastImageCentered();
-  
+
     &:nth-child(4) {
       img,picture {
         object-position: bottom center;

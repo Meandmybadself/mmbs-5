@@ -1,0 +1,36 @@
+---
+label: City of Pawnee Employee Directory
+sublabel:
+---
+
+{% extends '../_layouts/details.njk' %}
+
+{% block description %}
+  <p>As part of a technical interview for <a href='https://postlight.com'>a company that I would have loved to have worked for</a>, I was asked to build an employee directory.</p>
+  <p>The result was a tribute to one of my favorite TV shows,<br/>
+    <i>Parks and Recreation</i>
+  </p>
+  <p>
+    <i>The City of Pawnee Employee Directory</i> includes information about all of the employees of the City of Pawnee. The information includes the employee's name, title, phone number, email address, and a photo of the employee.</p>
+  <p>The application aims for a "city government" aesthetic and was designed while developed with <a href='https://tailwindcss.com/'>Tailwind CSS</a>.</p>
+  <p>It's content is editable with a custom CMS powered by <a href='https://feathersjs.com'>Feathers.</a>
+  </p>
+  <p>
+    <a href="https://pawnee.prmr.ec">City of Pawnee Employee Directory</a>
+  </p>
+
+{% endblock %}
+
+{% stylesheet 'scss' %}
+
+  $accent: #A4A4A4;
+  @import 'global';
+  @import 'mixins';
+  @import 'details';
+
+  @include lastImageCentered(2);
+  .box {
+    min-height:350px;
+    @include topAlignImage();
+  }
+{% endstylesheet %}

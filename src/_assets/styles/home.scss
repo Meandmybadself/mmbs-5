@@ -76,11 +76,11 @@ main.grid.grid--home {
     }
 
     &--tshirt-machine {
-      @include sized(2, 2);
+      @include sized(2, 1);
     }
 
     &--for-fern {
-      @include sized(2, 2);
+      @include sized(1, 1);
     }
 
     @include section("disrupt", #00bf5c);

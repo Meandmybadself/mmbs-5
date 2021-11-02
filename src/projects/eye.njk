@@ -1,0 +1,39 @@
+---
+label: BetamaXmas
+sublabel:
+---
+
+{% extends '../_layouts/details.njk' %}
+
+{% block description %}
+  <p>Why have a bay window if you're not going to display things in it?</p>
+  <p>For Halloween 2021, I put an eyeball into three.js &amp; projected it onto the back of a bedsheet in my office window.</p>
+  <p>
+    <a href="https://eye.meandmybadself.com">SEE THE EYE</a>
+    <a href="https://github.com/meandmybadself/eye">Source code</a>
+  </p>
+
+{% endblock %}
+
+{% stylesheet 'scss' %}
+  $accent: #8b1404;
+  @import 'global';
+  @import 'mixins';
+  @import 'details';
+
+  .box {
+    min-height:350px;
+    @include topAlignImage();
+
+    &:nth-child(4) {
+      img,picture {
+        object-position: bottom center;
+      }
+    }
+    &:nth-child(5) {
+      img,picture {
+        object-position: bottom right;
+      }
+    }
+  }
+{% endstylesheet %}

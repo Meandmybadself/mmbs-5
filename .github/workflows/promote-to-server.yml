@@ -9,10 +9,9 @@ on:
     workflow_dispatch:
 
 jobs:
-
   build:
+    timeout-minutes: 60
     runs-on: ubuntu-latest
-
     steps:
       - uses: appleboy/ssh-action@master
         timeout-minutes: 60

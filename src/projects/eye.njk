@@ -24,15 +24,15 @@ sublabel:
   .box {
     min-height:350px;
     @include topAlignImage();
+  }
 
-    &:nth-child(4) {
-      img,picture {
-        object-position: bottom center;
-      }
+  .box--image {
+    .bg img,picture {
+      object-size: contain;
     }
-    &:nth-child(5) {
-      img,picture {
-        object-position: bottom right;
+    @include med {
+      &:last-of-type {
+        grid-column: 2 / span 2 !important;
       }
     }
   }

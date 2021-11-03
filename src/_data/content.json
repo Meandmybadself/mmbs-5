@@ -1,5 +1,12 @@
 [
   {
+    "id": "eye",
+    "type": "projects",
+    "sublabel": "",
+    "label": "Eye",
+    "imageCount": 1
+  },
+  {
     "id": "oops-all-pangrams",
     "type": "projects",
     "sublabel": "",

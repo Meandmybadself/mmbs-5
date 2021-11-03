@@ -83,6 +83,10 @@ main.grid.grid--home {
       @include sized(1, 1);
     }
 
+    &--eye {
+      @include sized(2, 2);
+    }
+
     @include section("disrupt", #00bf5c);
     @include section("doritos", #fe3700);
     @include section("new-wheel", #9e191b);
@@ -112,5 +116,6 @@ main.grid.grid--home {
     @include section("select-stylist", #ff5857);
     @include section("spelly", #ff0066);
     @include section("oops-all-pangrams", #07c0f7);
+    @include section("eye", #4259a1);
   }
 }

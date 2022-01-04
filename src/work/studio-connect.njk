@@ -8,36 +8,50 @@ isDoubleHeight: true
 {% extends '../_layouts/details.njk' %}
 
 {% block description %}
-     <p>
-          Studio Connect is a platform connecting two communities who've been dying to meet each other:
-        </p>
-        <ul>
-          <li>product designers at Target, looking for fast feedback &amp;</li>
-          <li>their customers, looking for better products.</li>
-        </ul>
-        <p>
-          The web & mobile executions made interesting use of React & React Native by sharing the API layer, reducing effort for updates.
-        </p>
-        <p>
-          The mobile applications made use of Code Push, allowing updates to be sent & applied automatically, bypassing app store approvals
-        </p>
-        <p>Discussed in <a href='#'>Fast Company</a>, <a href='#'>Business Insider</a> & <a href='#'>Bustle</a>.</p>
+  <p>
+    Studio Connect is a platform connecting two communities who've been dying to meet each other:
+  </p>
+  <ul>
+    <li>product designers at Target, looking for fast feedback &amp;</li>
+    <li>their customers, looking for better products.</li>
+  </ul>
+  <p>
+    The web and mobile executions made interesting use of React + React Native by sharing the API client layer, reducing effort for updates.
+  </p>
+  <p>
+    The mobile applications made use of Code Push, allowing updates to be sent & applied automatically, bypassing app store approvals
+  </p>
+  <p>
+    The API layer was built with Node.js, Express, MongoDB and ElasticSearch.
+  </p>
+  <p>Discussed in <a href='#'>Fast Company</a>, <a href='#'>Business Insider</a> & <a href='#'>Bustle</a>.</p>
 {% endblock %}
 
 {% block attribution %}
-    <p class='mb-5'>Studio Connect was built by a murderer's row of talent, including:</p>
-      <ul>
-        <li class='red'>Stacy Adelmann</li>
-        <li class='red'><a href='https://github.com/thekbb'>Kevin Behrens</a></li>
-        <li class='red'><a href='https://featherstonegames.com/'>Joel Bodkin</a></li>
-        <li class='red'><a href='https://github.com/johnculviner'>John Culviner</a></li>
-        <li class='red'>Zach Mayry</li>
-        <li class='red'><a href='https://fulgid.io/'>Noah Muth</a></li>
-        <li class='red'>James Neumann</li>
-        <li class='red'><a href='https://davidpett.com/'>David Pett</a></li>
-        <li class='red'>Max Thorson</li>
-        <li>and the wonderful <span class='red'>Cristina Noterman</a></li>
-      </ul>
+  <p class='mb-5'>Studio Connect was built by a murderer's row of talent, including:</p>
+  <ul>
+    <li class='red'>Stacy Adelmann</li>
+    <li class='red'>
+      <a href='https://github.com/thekbb'>Kevin Behrens</a>
+    </li>
+    <li class='red'>
+      <a href='https://featherstonegames.com/'>Joel Bodkin</a>
+    </li>
+    <li class='red'>
+      <a href='https://github.com/johnculviner'>John Culviner</a>
+    </li>
+    <li class='red'>Zach Mayry</li>
+    <li class='red'>
+      <a href='https://fulgid.io/'>Noah Muth</a>
+    </li>
+    <li class='red'>James Neumann</li>
+    <li class='red'>
+      <a href='https://davidpett.com/'>David Pett</a>
+    </li>
+    <li class='red'>Max Thorson</li>
+    <li>and the wonderful <span class='red'>Cristina Noterman</a>
+    </li>
+  </ul>
 {% endblock %}
 
 {% stylesheet 'scss' %}
@@ -52,6 +66,6 @@ isDoubleHeight: true
       @include topAlignImage();
     }
   }
-  
+
 
 {% endstylesheet %}

@@ -1,0 +1,34 @@
+---
+label: Old Dog
+sublabel:
+hasAttribution: false
+---
+
+{% extends '../_layouts/details.njk' %}
+
+{% block description %}
+  <p>
+    There needs to be a second life for your old tablets &amp; phones. Old Dog aims to do just that.
+  </p>
+  <p>
+    With a bit of heavily-transpiled React &amp; a heavy-lifting API, I got a calendar running on a decade-old iPad that had been sitting in a closet for the past five years.
+  </p>
+  <p>
+    The API powering the calendar combines data from Google Calendar, Open Weather Map &amp; Todoist into a single data feed.
+  </p>
+{% endblock %}
+
+{% stylesheet 'scss' %}
+  $accent: #ff0000;
+  @import 'global';
+  @import 'mixins';
+  @import 'details';
+
+  .grid.grid--details {
+    .box.box--masthead {
+      min-height: 575px;
+    }
+  }
+
+
+{% endstylesheet %}

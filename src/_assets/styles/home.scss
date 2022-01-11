@@ -80,13 +80,21 @@ main.grid.grid--home {
     }
 
     &--for-fern {
-      @include sized(1, 1);
+      @include sized(2, 1);
     }
 
     &--eye {
-      @include sized(2, 2);
+      @include sized(1, 1);
     }
 
+    &--olddog {
+      @include sized(2, 1);
+      img {
+        object-position: top left;
+      }
+    }
+
+    @include section("olddog", #ff0000);
     @include section("disrupt", #00bf5c);
     @include section("doritos", #fe3700);
     @include section("new-wheel", #9e191b);

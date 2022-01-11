@@ -1,5 +1,15 @@
 [
   {
+    "id": "olddog",
+    "type": "projects",
+    "sublabel": "",
+    "label": "Old Dog",
+    "images": [
+      "Dark Mode",
+      "Icon"
+    ]
+  },
+  {
     "id": "eye",
     "type": "projects",
     "sublabel": "",

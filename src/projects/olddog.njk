@@ -11,11 +11,15 @@ hasAttribution: false
     There needs to be a second life for your old tablets &amp; phones. Old Dog aims to do just that.
   </p>
   <p>
-    With a bit of heavily-transpiled React &amp; a heavy-lifting API, I got a calendar running on a decade-old iPad that had been sitting in a closet for the past five years.
+    Old Dog aggregates four personal calendars, three school calendars and weather data, displaying events for the the upcoming week on a decade-old iPad.
+  </p>
+  <p>
+    The frontend is heavily transpiled React (to play nice on iOS9).  It uses Flex for layout (grid isn't available) and implements its own light/dark mode using the sunrise/sunset data from Open Weather Map.
   </p>
   <p>
     The API powering the calendar combines data from Google Calendar, Open Weather Map &amp; Todoist into a single data feed.
   </p>
+
 {% endblock %}
 
 {% stylesheet 'scss' %}

@@ -42,8 +42,8 @@
 
       h1 {
         font-weight: 400;
-        margin-top:0;
-        margin-bottom:0;
+        margin-top: 0;
+        margin-bottom: 0;
         font-size: 1em;
         @include med {
           font-size: 1.25em;
@@ -80,6 +80,9 @@
     pointer-events: none;
     z-index: 2;
     opacity: 0.15;
+    @media (hover: none) {
+      opacity: 0;
+    }
     transition: opacity 0.3s ease-out;
   }
 
@@ -120,7 +123,7 @@
     padding: var(--gutter) var(--gutter) 0;
 
     @include med {
-      padding:0;
+      padding: 0;
     }
 
     div.fg {
@@ -136,10 +139,10 @@
       font-size: 1.1em;
       letter-spacing: normal;
       line-height: 1.3em;
-      margin-bottom:20px;
+      margin-bottom: 20px;
       overflow-wrap: break-word;
       margin-top: 0;
-      padding:0;
+      padding: 0;
       list-style: none;
     }
   }
@@ -164,9 +167,10 @@
     }
   }
 
-  &--masthead, &--image {
+  &--masthead,
+  &--image {
     .bg {
-        @include absfill();
+      @include absfill();
     }
   }
 

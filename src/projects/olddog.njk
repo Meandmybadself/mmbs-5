@@ -8,16 +8,16 @@ hasAttribution: false
 
 {% block description %}
   <p>
-    There needs to be a second life for your old tablets &amp; phones. Old Dog aims to do just that.
+    There needs to be a second life for your old tablets &amp; phones.
   </p>
   <p>
     Old Dog aggregates four personal calendars, three school calendars and weather data, displaying events for the the upcoming week on a decade-old iPad.
   </p>
   <p>
-    The frontend is heavily transpiled React (to play nice on iOS9).  It uses Flex for layout (grid isn't available) and implements its own light/dark mode using the sunrise/sunset data from Open Weather Map.
+    The frontend is heavily-transpiled React (to play nice on iOS9).  It uses Flex for layout (<a href='https://caniuse.com/css-grid'>grid isn't available on iOS9</a>) and implements its own light/dark mode using the sunrise/sunset data from Open Weather Map.
   </p>
   <p>
-    The API powering the calendar combines data from Google Calendar, Open Weather Map &amp; Todoist into a single data feed.
+    The API powering the calendar combines data from Google Calendar, <a href='https://openweathermap.org/api'>Open Weather Map</a> &amp; <a href='https://developer.todoist.com/guides/#developing-with-todoist'>Todoist</a> into a single data feed.
   </p>
 
 {% endblock %}

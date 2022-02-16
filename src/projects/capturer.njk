@@ -1,0 +1,25 @@
+---
+label: Capturer
+sublabel:
+---
+
+{% extends '../_layouts/details.njk' %}
+
+{% block description %}
+  <p>Capturer is a regular expression tool that uses capture groups to isolate content.</p>
+  <p>It's a niche use-case, but it's useful for extracting data from strings.</p>
+  <p>Its built in React &amp; uses web workers to keep the UI quick.</p>
+  <p>
+    <a href="https://capturer.netlify.app/">Go Capture Some Things</a>
+  </p>
+
+{% endblock %}
+
+{% stylesheet 'scss' %}
+
+  $accent: #555555;
+  @import 'global';
+  @import 'mixins';
+  @import 'details';
+
+{% endstylesheet %}

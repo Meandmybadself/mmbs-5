@@ -33,6 +33,13 @@
     ]
   },
   {
+    "id": "capturer",
+    "type": "projects",
+    "label": "Capturer",
+    "sublabel": "",
+    "images": []
+  },
+  {
     "id": "text-a-target",
     "type": "work",
     "sublabel": "Target",

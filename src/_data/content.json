@@ -1,5 +1,17 @@
 [
   {
+    "id": "whodini",
+    "type": "projects",
+    "sublabel": "",
+    "label": "Whodini",
+    "images": [
+      "Tag Search",
+      "All Tags",
+      "Edit Profile Modal",
+      "Profile View"
+    ]
+  },
+  {
     "id": "olddog",
     "type": "projects",
     "sublabel": "",

@@ -1,0 +1,46 @@
+---
+label: Whodini
+hasAttribution: true
+---
+
+{% extends '../_layouts/details.njk' %}
+
+{% block description %}
+  <p>If you're in a large remote organization, finding a knowledge expert can be the most difficult part in solving a problem.</p>
+  <p>Whodini is a Slack application that provides an interface to tag users with bits of information. Once tagged, these tags can be surfaced as a way to search users.</p>
+  <p>These tags can be used to identify users who have certain skills, or personal attributes, like if they're a parent or a bicyclist.</p>
+
+  <p>
+    <a href='https://www.youtube.com/watch?v=qm2wxsjcplY'>Demo video</a>
+  </p>
+  <p>
+    <a href='https://whodini.prmr.ec/'>Install on your Slack.</a>
+  </p>
+{% endblock %}
+
+{% block attribution %}
+  <p>Special thanks to <a href='https://typemachine.com/'>Tim Drabandt</a> for the branding.</p>
+{% endblock %}
+
+{% stylesheet 'scss' %}
+
+  $accent: #453EC7;
+  @import 'global';
+  @import 'mixins';
+  @import 'details';
+  @include wideImages();
+
+  .grid {
+    .box.box--masthead {
+      min-height: 600px;
+    }
+    .box.box--image {
+       .bg picture,
+        img {
+          object-fit: contain;
+        }
+      min-height: 400px;
+    }
+  }
+
+{% endstylesheet %}

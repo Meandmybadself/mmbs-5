@@ -9,10 +9,11 @@ isDoubleHeight: true
 
 {% block description %}
   <p>To assist guests in finding items in stores being remodeled, Target pulled out all the stops.</p>
-  <p>One of the stops was standing up an SMS-based store search, which allowed users without the Target application to find items in
-        the store.</p>
+  <p>One initiative involved standing up an SMS-based store search, which allowed users without the Target application to find items in the store.</p>
+  <p>Inventory searches would query the Target API for a product in a store and get back an aisle / adjacent location.</p>
+  <p>We then took that aisle &amp; recursively searched the store's map (conveniently <a href='https://api.target.com/store_maps/v1/external/svg_images?location_id=1356&floor_id=1&key=8df66ea1e1fc070a6ea99e942431c9cd67a80f02'>served as an SVG</a>) to determine where the aisle was located in the store (e.g., back-left).</p>
   <p>The service ran for 8 months in 47 stores and sent/received over 500,000 messages.</p>
-  
+  <p>Under the hood, user messages were first parsed with <a href='http://naturalnode.github.io/natural/bayesian_classifier.html'>Natural</a> to determine intent, and then entities were extracted using <a href='https://spacy.io/'>spaCy</a>.</p>
 {% endblock %}
 
 {% block attribution %}
@@ -24,7 +25,7 @@ isDoubleHeight: true
   @import 'global';
   @import 'mixins';
   @import 'details';
-  
+
   .grid.grid--text-a-target {
     .box--image {
         @include topAlignImage();

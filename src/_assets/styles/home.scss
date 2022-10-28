@@ -1,6 +1,7 @@
 @import "mixins";
 
-main.grid.grid--home {
+main.grid.grid--home,
+main.grid.grid--media {
   .box {
     cursor: pointer;
     grid-column-start: auto;

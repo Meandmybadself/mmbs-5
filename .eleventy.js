@@ -29,6 +29,9 @@ module.exports = function (config) {
   // Documentation: https://www.11ty.dev/docs/data-deep-merge/
   config.setDataDeepMerge(true)
 
+  // Allow overriding reserved data properties for compatibility with Eleventy v3
+  config.setFreezeReservedData(false)
+
   // Options for LiquidJS
   // Documentation: https://liquidjs.com/tutorials/options.html
   config.setLiquidOptions({

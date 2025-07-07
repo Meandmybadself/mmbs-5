@@ -62,6 +62,9 @@ importers:
       postcss-preset-env:
         specifier: ^10.2.4
         version: 10.2.4(postcss@8.5.6)
+      punycode:
+        specifier: ^2.3.1
+        version: 2.3.1
       rimraf:
         specifier: ^6.0.1
         version: 6.0.1

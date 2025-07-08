@@ -23,10 +23,13 @@ module.exports = {
   // Image formats and quality to generate
   // Pass `same` to generate responsive images in the input format
   // Documentation: https://sharp.pixelplumbing.com/api-output
-  imageFormats: {
+  imageFormats: process.env.ELEVENTY_ENV === 'production' ? {
     same: 75,
     webp: 60,
     // // Remove AVIF if builds are taking too long
     // avif: 30
+  } : {
+    // Development mode: only generate WebP for faster builds
+    webp: 60
   }
 }

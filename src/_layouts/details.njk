@@ -12,9 +12,9 @@
         </div>
     </div>
 
-    {% for i in range(0, content.length) %}
-        {% if content[i].id == page.fileSlug %}
-            {% set link = content[i-1] %}
+    {% for i in range(0, projects.length) %}
+        {% if projects[i].id == page.fileSlug %}
+            {% set link = projects[i-1] %}
                 <div class='box box--link box--prev'>
                     {% if link and (link.type !== 'media') %}
                     <span>Prev: </span><a href='/{{link.type}}/{{link.id}}'>{{link.label}}</a>
@@ -38,9 +38,9 @@
 
     
 
-     {% for i in range(0, content.length) %}
-        {% if content[i].id == page.fileSlug %}
-            {% set link = content[i+1] %}
+     {% for i in range(0, projects.length) %}
+        {% if projects[i].id == page.fileSlug %}
+            {% set link = projects[i+1] %}
                 <div class='box box--link box--next'>
                 {% if link and (link.type !== 'media') %}
                     <span>Next: </span><a href='/{{link.type}}/{{link.id}}'>{{link.label}}</a>
@@ -66,7 +66,7 @@
 
   
 
-    {%- for item in content -%}
+    {%- for item in projects -%}
         {% if item.id == page.fileSlug %}
             {% for i in range(0, item.images.length) -%}
                 <div class="box box--image">
@@ -84,7 +84,7 @@
         {% endif %}
     {% endfor %}
 
-    {%- for item in content -%}
+    {%- for item in projects -%}
         {% if item.id == page.fileSlug %}
             {% for i in range(0, item.imageCount) -%}
                 <div class="box box--image">

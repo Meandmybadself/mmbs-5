@@ -3,7 +3,7 @@ label: Paint By Numbers
 sublabel: 
 ---
   <main class="grid grid--{{page.fileSlug}}">
-   {%- for item in content -%}
+   {%- for item in projects -%}
         {% if item.id == page.fileSlug %}
             {% for i in range(0, item.images.length) -%}
                 <div class="box box--image">
